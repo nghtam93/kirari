@@ -958,13 +958,10 @@ img {
       width: 100%;
       height: 230px; }
     .home-slider .dnfix__thumb {
-      padding-top: 80%; }
+      padding-top: 120%; }
     .home-slider .el__title {
       font-size: 34px;
       letter-spacing: 2px; } }
-  @media (max-width: 375px) {
-    .home-slider .dnfix__thumb {
-      padding-top: 120%; } }
 
 /*Effect*/
 [data-animate] {
