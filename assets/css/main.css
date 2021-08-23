@@ -978,7 +978,7 @@ img {
   animation-delay: 2s;
   transform: translate3d(0, 0, 0) scale(1.2);
   opacity: 1 !important;
-  transition: transform 10s ease-in-out; }
+  transition: transform 5s ease-in-out; }
 
 .flickity-slider > *:not(.is-selected) [data-animated="true"] {
   transition: opacity 0.3s !important; }

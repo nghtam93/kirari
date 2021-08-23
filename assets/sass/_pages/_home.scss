@@ -158,7 +158,7 @@
 
 /*Effect*/
 [data-animate]{will-change:filter,transform,opacity;-webkit-backface-visibility:hidden;animation-fill-mode:forwards;opacity:1!important;transition:filter 1.3s,transform 1.6s,opacity 0.7s ease-in}
-.slider .is-selected [data-animated="true"]{animation-delay:2s;transform:translate3d(0,0,0) scale(1.2);opacity:1!important;transition: transform 10s ease-in-out;}
+.slider .is-selected [data-animated="true"]{animation-delay:2s;transform:translate3d(0,0,0) scale(1.2);opacity:1!important;transition: transform 5s ease-in-out;}
 .flickity-slider>*:not(.is-selected) [data-animated="true"]{transition:opacity 0.3s!important}
 .slider [data-animate="none"]{opacity:1!important}
 [data-animated="false"]{transition:none!important}
