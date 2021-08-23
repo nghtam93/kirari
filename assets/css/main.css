@@ -1653,20 +1653,24 @@ img {
     .home-service .el__list a {
       padding: 17px 40px 10px 20px; }
     .home-service .el__list.-medium {
-      margin-left: -15px;
-      margin-right: -15px; }
+      --bs-gutter-x: 1.5rem;
+      margin-right: calc(var(--bs-gutter-x) * -.5);
+      margin-left: calc(var(--bs-gutter-x) * -.5); }
       .home-service .el__list.-medium li {
-        padding: 0 15px; } }
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5); } }
   @media (max-width: 575px) {
     .home-service .el__content {
       padding-bottom: 20px; }
     .home-service .el__list {
-      margin-left: -10px;
-      margin-right: -10px;
       padding-bottom: 10px; }
       .home-service .el__list.-medium li {
-        min-width: 50%;
-        padding: 0 10px; }
+        min-width: 50%; }
+        .home-service .el__list.-medium li a {
+          padding: 15px 30px 7px 25px;
+          font-size: 16px; }
+        .home-service .el__list.-medium li::after {
+          right: 10px; }
       .home-service .el__list a {
         padding: 17px 28px 10px 5px;
         font-size: 16px; }
