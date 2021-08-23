@@ -923,11 +923,14 @@
       color: #fff;
       &:hover{
         .el__meta{
-          background-color: rgba(97, 90, 83, .6);
+          background-color: rgba(97, 90, 83, .2);
+        }
+        .el__title{
+          font-weight: 700;
         }
         &.-color--black{
           .el__meta{
-            background-color: rgba(255, 255,255, .6);
+            background-color: rgba(255, 255,255, .1);
           }
         }
       }
@@ -952,6 +955,7 @@
       font-weight: 500;
       text-align: center;
       margin-bottom: 15px;
+      transition: all .5s;
     }
     &__excerpt{
       font-size: 17px;
@@ -1109,7 +1113,7 @@
 
 .home-features{
   background-color: #F8F6F3;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 200px;
   overflow: hidden;
   .el{

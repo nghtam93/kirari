@@ -63,7 +63,9 @@ img{
 
 /**/
 .sc{
-    
+    &__header{
+        padding: 100px 0 100px;
+    }
     &__title{
         font-size: 87px;
         font-family: 'EB Garamond';
@@ -78,7 +80,7 @@ img{
     }
     @media (max-width:1599px){
         &__header{
-            padding: 100px 0 50px;
+            padding: 80px 0 80px;
         }
         &__title{
             font-size: 60px;
@@ -96,9 +98,7 @@ img{
         }
     }
     @media ( max-width: 991px ) {
-        &__header {
-            padding: 80px 0 50px;
-        }
+       
         &__title {
             font-size: 45px;
         }
