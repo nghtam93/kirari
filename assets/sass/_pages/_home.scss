@@ -149,8 +149,10 @@
         letter-spacing: 2px;
       }
     }
-    @media (max-width:375px){
-     
+    @media (max-width:414px){
+      .dnfix__thumb{
+        padding-top: 150%;
+      }
     }
 }
 
@@ -257,7 +259,6 @@
     }
   }
   @media (max-width:575px){
-  
     .table-schedule th, .table-schedule td {
         padding: 5px 5px;
         min-width: 24px;

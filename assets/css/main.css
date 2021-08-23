@@ -962,6 +962,9 @@ img {
     .home-slider .el__title {
       font-size: 34px;
       letter-spacing: 2px; } }
+  @media (max-width: 414px) {
+    .home-slider .dnfix__thumb {
+      padding-top: 150%; } }
 
 /*Effect*/
 [data-animate] {
