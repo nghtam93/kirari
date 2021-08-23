@@ -1058,7 +1058,7 @@ img {
         margin: 30px auto 30px; } }
   @media (max-width: 575px) {
     .schedule .table-schedule th, .schedule .table-schedule td {
-      padding: 5px 10px;
+      padding: 5px 5px;
       min-width: 24px; } }
 
 .home-banner-contact {
