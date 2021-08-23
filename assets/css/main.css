@@ -1052,8 +1052,10 @@ img {
       .schedule.-st2 {
         margin-left: auto; } }
   @media (max-width: 767px) {
-    .schedule.-st2 {
-      margin: 30px auto 30px; } }
+    .schedule {
+      padding: 10px 10px; }
+      .schedule.-st2 {
+        margin: 30px auto 30px; } }
   @media (max-width: 575px) {
     .schedule .table-schedule th, .schedule .table-schedule td {
       padding: 5px 10px;
