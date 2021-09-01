@@ -19,7 +19,7 @@
         &__btn{
           display: inline-block;
           min-width: 310px;
-          padding: 10px 5px 5px;
+          padding: 6px 5px;
           font-size: 20px;
           color: #fff;
           background-color: $color_primary;
@@ -27,17 +27,20 @@
           text-align: center;
           letter-spacing: 4px;
           line-height: 1.4;
+          font-family: 'Noto Serif JP', serif;
         }
         &__text{
             font-size: 15px;
             letter-spacing: 2px;
         }
         &__tel{
+            display: block;
           font-family: 'EB Garamond';
           font-size: 38px;
           letter-spacing: 4px;
           line-height: 1;
           margin-bottom: 20px;
+          color: #524945;
         }
       }
     &__map{
@@ -48,6 +51,7 @@
         margin-bottom: 30px;
         font-size: 18px;
         letter-spacing: 2px;
+        font-family: 'Noto Serif JP', serif;
         .sub-menu{
             display: none;
             position: relative;
@@ -93,13 +97,14 @@
     }
 
     &__socical{
+        font-family: 'Noto Serif JP', serif;
         a{
             display: flex;
             width: 100%;
             max-width: 300px;
             border: 1px solid transparent;
             border-radius: 30px;
-            padding: 8px 20px 4px;
+            padding: 6px 20px;
             color: #fff;
             background-color: #6484C4;
             margin-bottom: 15px;
@@ -203,6 +208,7 @@
     display: none;
     background: rgba(220, 208, 196, .5);
     z-index: 100;
+    font-family: 'Noto Serif JP', serif;
     .el__wrap{
         display: flex;
         align-items: center;

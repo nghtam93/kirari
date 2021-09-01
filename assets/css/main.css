@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .color-primary {
   color: #C4A464; }
 
@@ -16,21 +17,9 @@
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
-@font-face {
-  font-family: 'NotoSerifJP';
-  src: url("../fonts/NotoSerifJP/NotoSerifJP-Medium-Alphabetic.woff2") format("woff2"), url("../fonts/NotoSerifJP/NotoSerifJP-Medium-Alphabetic.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'NotoSerifJP';
-  src: url("../fonts/NotoSerifJP/NotoSerifJP-Regular-Alphabetic.woff2") format("woff2"), url("../fonts/NotoSerifJP/NotoSerifJP-Regular-Alphabetic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
 body {
   color: #524945;
-  font: 18px/1.8 'NotoSerifJP'; }
+  font: 18px/1.8 'Noto Sans JP', sans-serif; }
 
 ul {
   list-style: none;
@@ -67,7 +56,8 @@ img {
 .sc__sub {
   font-size: 31px;
   font-weight: 500;
-  letter-spacing: 10px; }
+  letter-spacing: 10px;
+  font-family: 'Noto Serif JP', serif; }
 @media (max-width: 1599px) {
   .sc__header {
     padding: 80px 0 80px; }
@@ -190,8 +180,8 @@ img {
 .btn {
   position: relative;
   font-size: 20px;
-  line-height: normal;
-  padding: 12px 10px 8px;
+  line-height: 1.8;
+  padding: 8px 10px 8px;
   border-color: #524945;
   border-radius: 30px;
   min-width: 295px;
@@ -199,7 +189,8 @@ img {
   color: #524945;
   letter-spacing: 2px;
   transition: all 1s;
-  overflow: hidden; }
+  overflow: hidden;
+  font-family: 'Noto Serif JP', serif; }
   .btn:hover {
     background-color: #524945;
     border-color: #524945;
@@ -249,7 +240,8 @@ img {
 */
 .main__nav {
   position: relative;
-  z-index: 9; }
+  z-index: 9;
+  font-family: 'Noto Serif JP', serif; }
   .main__nav:after {
     content: "";
     display: table;
@@ -394,7 +386,8 @@ img {
   font-size: 18px;
   font-weight: 400;
   pointer-events: none;
-  overflow: auto; }
+  overflow: auto;
+  font-family: 'Noto Serif JP', serif; }
   .nav__mobile__close {
     width: 40px;
     height: 40px;
@@ -624,7 +617,10 @@ img {
     border: 1px solid #fff;
     border-radius: 30px;
     color: #fff;
-    padding: 9px 25px 6px; }
+    padding: 6px 25px 6px;
+    display: inline-block;
+    line-height: 1;
+    font-family: 'Noto Serif JP', serif; }
     .header__btn:hover {
       color: #fff;
       background: #524945;
@@ -670,29 +666,33 @@ img {
     .sc-footer .el__btn {
       display: inline-block;
       min-width: 310px;
-      padding: 10px 5px 5px;
+      padding: 6px 5px;
       font-size: 20px;
       color: #fff;
       background-color: #C4A464;
       border-radius: 30px;
       text-align: center;
       letter-spacing: 4px;
-      line-height: 1.4; }
+      line-height: 1.4;
+      font-family: 'Noto Serif JP', serif; }
     .sc-footer .el__text {
       font-size: 15px;
       letter-spacing: 2px; }
     .sc-footer .el__tel {
+      display: block;
       font-family: 'EB Garamond';
       font-size: 38px;
       letter-spacing: 4px;
       line-height: 1;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      color: #524945; }
   .sc-footer__map {
     margin-bottom: 30px; }
   .sc-footer__menu {
     margin-bottom: 30px;
     font-size: 18px;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    font-family: 'Noto Serif JP', serif; }
     .sc-footer__menu .sub-menu {
       display: none;
       position: relative;
@@ -720,30 +720,32 @@ img {
       position: relative;
       top: -2px;
       color: #524945; }
-  .sc-footer__socical a {
-    display: flex;
-    width: 100%;
-    max-width: 300px;
-    border: 1px solid transparent;
-    border-radius: 30px;
-    padding: 8px 20px 4px;
-    color: #fff;
-    background-color: #6484C4;
-    margin-bottom: 15px;
-    letter-spacing: 4px; }
-    .sc-footer__socical a:hover {
-      background-color: #4467ab; }
-  .sc-footer__socical span {
-    position: relative;
-    top: 2px;
-    font-size: 20px; }
-  .sc-footer__socical p {
-    flex-grow: 1;
-    text-align: center; }
-  .sc-footer__socical .icon-instagram {
-    font-size: 26px; }
-  .sc-footer__socical .icon-line {
-    font-size: 28px; }
+  .sc-footer__socical {
+    font-family: 'Noto Serif JP', serif; }
+    .sc-footer__socical a {
+      display: flex;
+      width: 100%;
+      max-width: 300px;
+      border: 1px solid transparent;
+      border-radius: 30px;
+      padding: 6px 20px;
+      color: #fff;
+      background-color: #6484C4;
+      margin-bottom: 15px;
+      letter-spacing: 4px; }
+      .sc-footer__socical a:hover {
+        background-color: #4467ab; }
+    .sc-footer__socical span {
+      position: relative;
+      top: 2px;
+      font-size: 20px; }
+    .sc-footer__socical p {
+      flex-grow: 1;
+      text-align: center; }
+    .sc-footer__socical .icon-instagram {
+      font-size: 26px; }
+    .sc-footer__socical .icon-line {
+      font-size: 28px; }
   @media (max-width: 1299px) {
     .sc-footer .el__col--left {
       padding-right: 30px; } }
@@ -803,7 +805,8 @@ img {
   width: 100%;
   display: none;
   background: rgba(220, 208, 196, 0.5);
-  z-index: 100; }
+  z-index: 100;
+  font-family: 'Noto Serif JP', serif; }
   .sc-footer__bar .el__wrap {
     display: flex;
     align-items: center;
@@ -921,7 +924,8 @@ img {
   .home-slider .el__sub {
     font-size: 33px;
     font-weight: 500;
-    color: #fff; }
+    color: #fff;
+    font-family: 'Noto Serif JP', serif; }
   @media (max-width: 1599px) {
     .home-slider .el__title {
       font-size: 46px; }
@@ -1002,7 +1006,8 @@ img {
   background: rgba(105, 92, 85, 0.8);
   color: #fff;
   font-size: 15px;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  font-family: 'Noto Sans JP', sans-serif; }
   .schedule.-st2 {
     position: relative;
     bottom: 0;
@@ -1082,7 +1087,7 @@ img {
       position: relative;
       display: inline-block;
       min-width: 200px;
-      padding: 10px 5px 5px;
+      padding: 6px 5px 6px;
       font-size: 20px;
       color: #fff;
       background-color: #C4A464;
@@ -1092,7 +1097,8 @@ img {
       letter-spacing: 4px;
       line-height: 1.4;
       transition: all 1s;
-      overflow: hidden; }
+      overflow: hidden;
+      font-family: 'Noto Serif JP', serif; }
       .home-banner-contact .el__btn span {
         position: relative; }
       .home-banner-contact .el__btn::before {
@@ -1119,11 +1125,13 @@ img {
       letter-spacing: 2px;
       text-align: center; }
     .home-banner-contact .el__tel {
+      display: block;
       font-family: 'EB Garamond';
       font-size: 38px;
       text-align: center;
       letter-spacing: 4px;
-      line-height: 1; }
+      line-height: 1;
+      color: #524945; }
   @media (max-width: 1299px) {
     .home-banner-contact .el__thumb {
       margin-right: 30px;
@@ -1159,7 +1167,8 @@ img {
       font-size: 28px;
       font-weight: 500;
       margin-bottom: 10px;
-      letter-spacing: 2px; }
+      letter-spacing: 2px;
+      font-family: 'Noto Serif JP', serif; }
     .home-banner-imgtext .el__sub {
       font-size: 15px;
       letter-spacing: 2px; }
@@ -1266,7 +1275,8 @@ img {
     font-size: 41px;
     font-weight: 500;
     margin-bottom: 30px;
-    letter-spacing: 4px; }
+    letter-spacing: 4px;
+    font-family: 'Noto Serif JP', serif; }
     .home-message .el__title.-big {
       font-family: 'EB Garamond';
       font-size: 144px;
@@ -1381,7 +1391,7 @@ img {
   .home-recommended .sc2__title {
     display: inline-block;
     font-size: 40px;
-    font-family: 'EB Garamond';
+    font-family: 'Noto Serif JP', serif;
     font-weight: 400;
     color: #695C55;
     letter-spacing: 8px;
@@ -1414,7 +1424,8 @@ img {
     font-weight: 500;
     color: #695C55;
     letter-spacing: 8px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-family: 'Noto Serif JP', serif; }
     .home-recommended .el__title::after {
       content: "";
       width: 0;
@@ -1429,7 +1440,8 @@ img {
     font-weight: 400;
     margin-bottom: 15px;
     letter-spacing: 2px;
-    color: #524945; }
+    color: #524945;
+    font-family: 'Noto Serif JP', serif; }
   .home-recommended .el__excerpt {
     font-size: 17px;
     margin-bottom: 30px;
@@ -1445,7 +1457,8 @@ img {
     color: #6484C4;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    text-align: center; }
+    text-align: center;
+    font-family: 'Noto Serif JP', serif; }
     .home-recommended .el2__title a {
       color: #6484C4; }
     .home-recommended .el2__title:hover .el2__icon {
@@ -1570,7 +1583,8 @@ img {
     font-weight: 500;
     text-align: center;
     margin-bottom: 15px;
-    transition: all .5s; }
+    transition: all .5s;
+    font-family: 'Noto Serif JP', serif; }
   .home-service .el__excerpt {
     font-size: 17px;
     line-height: 1.7;
@@ -1589,7 +1603,7 @@ img {
       .home-service .el__list.-medium a {
         width: 100%;
         color: #524945;
-        padding: 18px 45px 10px;
+        padding: 14px 45px;
         border-radius: 55px;
         font-size: 20px;
         background-color: transparent;
@@ -1603,7 +1617,7 @@ img {
     .home-service .el__list a {
       position: relative;
       display: block;
-      padding: 25px 50px 18px 50px;
+      padding: 22px 50px;
       text-align: center;
       border: 1px solid #C4A464;
       border-radius: 70px;
@@ -1612,8 +1626,9 @@ img {
       margin-bottom: 40px;
       font-size: 22px;
       letter-spacing: 4px;
-      line-height: 1;
-      transition: all 1s; }
+      line-height: 1.2;
+      transition: all 1s;
+      font-family: 'Noto Serif JP', serif; }
       .home-service .el__list a:hover {
         background-color: #fff;
         color: #C4A464; }
@@ -1643,11 +1658,11 @@ img {
     .home-service .el__list a::after {
       right: 20px; }
     .home-service .el__list.-medium a {
-      padding: 15px 45px 7px;
+      padding: 11px ​45px;
       font-size: 18px; }
     .home-service .el__list a {
       font-size: 18px;
-      padding: 17px 40px 10px 25px; } }
+      padding: 14px 40px 13px 25px; } }
   @media (max-width: 991px) {
     .home-service {
       padding-bottom: 30px; }
@@ -1657,7 +1672,7 @@ img {
         font-size: 26px; } }
   @media (max-width: 767px) {
     .home-service .el__list a {
-      padding: 17px 40px 10px 20px; }
+      padding: 14px 40px 13px 20px; }
     .home-service .el__list.-medium {
       --bs-gutter-x: 1.5rem;
       margin-right: calc(var(--bs-gutter-x) * -.5);
@@ -1673,12 +1688,12 @@ img {
       .home-service .el__list.-medium li {
         min-width: 50%; }
         .home-service .el__list.-medium li a {
-          padding: 15px 30px 7px 25px;
+          padding: 11px 30px 11px 25px;
           font-size: 16px; }
         .home-service .el__list.-medium li::after {
           right: 10px; }
       .home-service .el__list a {
-        padding: 17px 28px 10px 5px;
+        padding: 12px 28px 12px 5px;
         font-size: 16px; }
         .home-service .el__list a::after {
           right: 10px; } }
@@ -1703,7 +1718,8 @@ img {
   .home-features .el__title {
     font-size: 35px;
     margin-bottom: 50px;
-    letter-spacing: 4px; }
+    letter-spacing: 4px;
+    font-family: 'Noto Serif JP', serif; }
   .home-features .el__excerpt {
     font-size: 17px;
     margin-bottom: 50px;
@@ -1779,7 +1795,8 @@ img {
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 50px;
-    letter-spacing: 6px; }
+    letter-spacing: 6px;
+    font-family: 'Noto Serif JP', serif; }
   .home-greeting .el__excerpt {
     font-size: 17px;
     letter-spacing: 2px; }
@@ -1790,14 +1807,16 @@ img {
     font-weight: 500;
     text-align: right;
     color: #695C55;
-    letter-spacing: 8px; }
+    letter-spacing: 8px;
+    font-family: 'Noto Serif JP', serif; }
     .home-greeting .el__ruby span {
       margin-right: 25px; }
     .home-greeting .el__ruby ruby {
       display: inline-flex;
       flex-direction: column-reverse;
       margin-right: 15px;
-      font-size: 30px; }
+      font-size: 30px;
+      line-height: 1; }
     .home-greeting .el__ruby rt {
       font-size: 14px;
       margin-bottom: 5px;
@@ -1962,13 +1981,15 @@ img {
   .home-information .el__excerpt {
     font-size: 17px;
     line-height: 1.9;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    color: #524945; }
   .home-information .el2__item {
     position: relative;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
-    text-align: center; }
+    text-align: center;
+    font-family: 'Noto Serif JP', serif; }
     .home-information .el2__item a {
       color: #fff; }
     .home-information .el2__item img {
@@ -2064,7 +2085,8 @@ img {
     width: 100px;
     margin-right: 40px; }
   .home-outline .el__value {
-    flex-grow: 1; }
+    flex-grow: 1;
+    color: #524945; }
   .home-outline .el__listbtn {
     display: flex;
     flex-wrap: wrap;

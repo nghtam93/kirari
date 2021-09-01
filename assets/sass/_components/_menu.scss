@@ -6,6 +6,7 @@
 .main__nav{
     position:relative;
     z-index:9;
+    font-family: 'Noto Serif JP', serif;
     &:after{
         content:"";
         display:table;
@@ -119,8 +120,6 @@
    
 }
 
-
-
 /*Menu custom*/
 .modal-open{overflow:hidden;}
 
@@ -139,6 +138,7 @@
     font-weight: 400;
     pointer-events: none;
     overflow: auto;
+    font-family: 'Noto Serif JP', serif;
     &__close {
         width: 40px;
         height: 40px;

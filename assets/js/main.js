@@ -1,7 +1,7 @@
 jQuery(function($) {
     $(document).ready(function(){
 
-        new WOW().init();
+        // new WOW().init();
 
         var header_sticky = $('header.header')
         $(window).scroll(function(){

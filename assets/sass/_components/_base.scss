@@ -26,29 +26,9 @@ $color_secondary: #FF6B1D;
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: 'NotoSerifJP';
-    src: url('../fonts/NotoSerifJP/NotoSerifJP-Medium-Alphabetic.woff2') format('woff2'),
-        url('../fonts/NotoSerifJP/NotoSerifJP-Medium-Alphabetic.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'NotoSerifJP';
-    src: url('../fonts/NotoSerifJP/NotoSerifJP-Regular-Alphabetic.woff2') format('woff2'),
-        url('../fonts/NotoSerifJP/NotoSerifJP-Regular-Alphabetic.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-
 
 body{
-    color:#524945;font:18px/1.8 'NotoSerifJP';
+    color:#524945;font:18px/1.8 'Noto Sans JP', sans-serif;
 }
 ul{list-style:none;padding:0;margin-bottom:0}
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{line-height:normal;}
@@ -77,6 +57,7 @@ img{
         font-size: 31px;
         font-weight: 500;
         letter-spacing: 10px;
+        font-family: 'Noto Serif JP', serif;
     }
     @media (max-width:1599px){
         &__header{
@@ -179,8 +160,8 @@ img{
 .btn{
     position: relative;
     font-size: 20px;
-    line-height: normal;
-    padding: 12px 10px 8px;
+    line-height: 1.8;
+    padding: 8px 10px 8px;
     border-color: #524945;
     border-radius: 30px;
     min-width: 295px;
@@ -189,6 +170,7 @@ img{
     letter-spacing: 2px;
     transition: all 1s;
     overflow: hidden;
+    font-family: 'Noto Serif JP', serif;
     &:hover{
         background-color: #524945;
         border-color: #524945;
