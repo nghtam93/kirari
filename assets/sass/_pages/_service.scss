@@ -1,0 +1,261 @@
+.service{
+    &-intro{
+        position: relative;
+        padding: 90px 0 60px;
+        background: linear-gradient(to bottom, #F8F6F3 70%, transparent);
+        .el{
+            &__item{
+                margin-bottom: 135px;
+            }
+            &__meta{
+                position: relative;
+                margin-top: 55px;
+                padding: 65px 75px 90px 65px;
+                background-color: rgba(255, 255, 255, .86);
+            }
+            &__title{
+                font-family: 'Noto Serif JP', serif;
+                font-size: 37px;
+                letter-spacing: 4px;
+                color: #C4A464;
+                margin-bottom: 50px;
+            }
+            &__excerpt{
+                color: #524945;
+                line-height: 2;
+            }
+            &__thumb{
+                position: relative;
+                left: -150px;
+                width: calc(120% + 150px);
+                .dnfix__thumb{
+                    padding-top: 66.7%;
+                }
+            }
+            &__listbtn{
+                justify-content: center;
+                li{
+                  margin-bottom: 30px;
+                }
+                a{
+                    width: 100%;
+                    min-width: 100%;
+                    padding: 14px 25px 14px 10px;
+                    transition: all 1s;
+                    border-color: #C4A464;
+                    background-color: #C4A464;
+                    color: #fff;
+                    &:hover{
+                      background-color: #524945;
+                      border-color: #524945;
+                      color: #fff;
+                    }
+                    &::after{
+                    content: "\e906";
+                      margin-top: 1px;
+                      font-size: 10px;
+                      right: 20px;
+                    }
+                }
+            }
+        }
+    }
+    &-ct{
+        padding: 180px 0 0 90px;
+        .el{
+            &__item{
+                margin-bottom: 100px;
+                &:last-child{
+                    margin-bottom:70px;
+                }
+            }
+            &__header{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                border-bottom: 1px solid #C4A464;
+                margin-bottom: 30px;
+            }
+            &__title{
+                font-family: 'Noto Serif JP', serif;
+                font-size: 35px;
+                font-weight: 500;
+                letter-spacing: 4px;
+                color: #695C55;
+            }
+            &__button{
+                display: inline-block;
+                font-size: 18px;
+                line-height: 1.2;
+                letter-spacing: 2px;
+                margin-left: auto;
+                padding: 6px 15px;
+                border-radius: 34px;
+                color: #fff;
+                background-color: #695C55;
+            }
+            &__list{
+                font-family: 'Noto Serif JP', serif;
+                font-size: 25px;
+                letter-spacing: 2px;
+                color: #9E8146;
+                margin-bottom: 30px;
+                span{
+                    color: #D8CDB5;
+                }
+            }
+            &__excerpt{
+                margin-bottom: 30px;
+                p{
+                    span{
+                        color: #6484C4;
+                    }
+                    +p{
+                        margin-top: 40px;
+                    }
+                }
+            }
+            &__thumb{
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &-info{
+        padding: 30px 0 200px;
+        text-align: center;
+        .el{
+            &__sub{
+                font-family: 'EB Garamond';
+                font-size: 46px;
+                letter-spacing: 4px;
+                color: #D0B683;
+                margin-bottom: 15px;
+            }
+            &__title{
+                font-family: 'Noto Serif JP', serif;
+                font-size: 28px;
+                letter-spacing: 8px;
+                color: #695C55;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    @media (max-width:1399px){
+        &-info {
+            padding: 30px 0 100px;
+        }
+
+        &-ct{
+            padding: 100px 0 0 0;
+        }
+    }
+    @media (max-width:1199px){
+        &-intro{
+            .el__item {
+                margin-bottom: 100px;
+            }
+            .el__meta {
+                padding: 40px 30px 40px;
+            }
+            .el__title {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+            .el__excerpt {
+                font-size: 16px;
+            }
+            .el__listbtn {
+                --bs-gutter-x: .5rem;
+                a::after {
+                    right: 10px;
+                }
+            }
+        }
+        &-ct {
+            padding: 50px 0 0;
+            .el__item {
+                margin-bottom: 80px;
+            }
+            .el__list {
+                font-size: 20px;
+            }
+            .el__title {
+                font-size: 28px;
+            }
+            .el__excerpt {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+        }
+        &-info{
+            padding: 30px 0 100px;
+            .el__sub {
+                font-size: 38px;
+                margin-bottom: 15px;
+            }
+            .el__title {
+                font-size: 24px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    @media (max-width:991px){
+        &-intro{
+            .el__title {
+                font-size: 28px;
+            }
+            .el__thumb {
+                left: calc(var(--bs-gutter-x) * -.5);
+                width: calc(120%);
+            }
+        }
+        &-ct{
+            .el__title {
+                font-size: 24px;
+            }
+            .el__button {
+                font-size: 14px;
+            }
+            .el__list {
+                font-size: 18px;
+            }
+        }
+    }
+    @media (max-width:767px){
+        &-intro {
+            .el__thumb{
+                width: 100%;
+                max-width: 90%;
+            }
+            .el__meta {
+                margin-top: -55px;
+            }
+        }
+        &-info{
+            .el__sub {
+                font-size: 30px;
+            }
+            .el__title {
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    @media (max-width:575px){
+        &-intro{
+            padding: 50px 0 30px;
+            .el__title{
+                font-size: 26px;
+            }
+            .el__listbtn a {
+                padding: 8px 25px 8px 10px;
+            }
+        }
+        
+    }
+    @media (max-width:479px){
+        &-intro .el__title {
+            font-size: 21px;
+        }
+    }
+}

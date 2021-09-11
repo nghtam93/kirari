@@ -1,7 +1,7 @@
 .sc-footer{
     padding-top: 70px;
     padding-bottom: 70px;
-    background-color: #F8F6F3;
+    background-color: #F7F6F2;
     &__logo{
         margin-bottom: 50px;
     }
@@ -17,6 +17,7 @@
         &__boxinfo{
         }
         &__btn{
+        position: relative;
           display: inline-block;
           min-width: 310px;
           padding: 6px 5px;
@@ -28,10 +29,37 @@
           letter-spacing: 4px;
           line-height: 1.4;
           font-family: 'Noto Serif JP', serif;
+          overflow: hidden;
+          span{
+              position: relative;
+          }
+          &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: 2s all cubic-bezier(0.19, 1, 0.22, 1);
+            top: 0;
+            left: 0;
+            transform: rotate(45deg);
+            background: #fff;
+          }
+          &:hover{
+            border-color: #6584C4;
+            color: #fff;
+            &::before {
+              opacity: 1;
+              transform: scale(2) rotate(0deg);
+              background: #6584C4;
+            }
+          }
         }
         &__text{
             font-size: 15px;
             letter-spacing: 2px;
+            margin-bottom: 10px;
         }
         &__tel{
             display: block;
@@ -110,7 +138,7 @@
             margin-bottom: 15px;
             letter-spacing: 4px;
             &:hover{
-                background-color: #4467ab;
+                background-color: #082b71;
             }
         }
         span{
@@ -129,6 +157,7 @@
             font-size: 28px;
         }
     }
+    
     @media ( max-width: 1299px ) {
         .el__col--left {
             padding-right: 30px;
@@ -175,6 +204,9 @@
                 margin-right: 15px;
             }
         }
+        .sc-footer__menu {
+            display:none;
+        }
     }
     @media ( max-width: 767px ) {
         .sc-footer__logo {
@@ -183,6 +215,15 @@
         }
         .el__boxinfo {
             justify-content: center;
+        }
+        .el__tel {
+            text-align: center;
+            margin: 20px 0 25px;
+        }
+    }
+    @media ( max-width: 483px ) {
+        &__socical li {
+            margin-right: 0;
         }
     }
 }
@@ -196,7 +237,7 @@
         padding: 20px 0 14px;
     }
     @media ( max-width: 991px ) {
-        margin-bottom: 71px;
+        margin-bottom: 76px;
     }
 }
 
@@ -216,7 +257,7 @@
     }
     .el__item{
         width: 100%;
-        padding: 10px 10px 2px;
+        padding: 15px 10px 5px;
         text-align: center;
         font-size: 15px;
         span{
@@ -230,7 +271,7 @@
             color: #fff;
             background-color: #6484C4;
             .el__icon{
-                font-size: 30px;
+                font-size: 27px;
                 margin-bottom: 2px;
                 color: #fff;
             }
@@ -239,12 +280,13 @@
             color: #fff;
             background-color: #C4A464;
             .el__icon{
-                font-size: 27px;
+                font-size: 24px;
                 color: #fff;
             }
         }
         &.-map{
-            width: 60px;
+            flex: 0 0 auto;
+            width: 90px;
             font-size: 10px;
             font-weight: 500;
             .el__icon{
@@ -252,12 +294,13 @@
             }
         }
         &.-menu{
-            width: 60px;
+            flex: 0 0 auto;
+            width: 90px;
             font-size: 10px;
             font-weight: 500;
             .el__icon{
                 font-size: 30px;
-                width: 28px;
+                width: 26px;
                 margin: 3px auto 10px;
             }
         }
@@ -267,5 +310,16 @@
     }
     @media ( max-width: 991px ) {
         display: block;
+    }
+    @media ( max-width: 575px ) {
+        .el__item{
+            padding: 10px 10px 2px;
+            &.-map{
+                width: 60px;
+            }
+            &.-menu{
+                width: 60px;
+            }
+        }
     }
 }

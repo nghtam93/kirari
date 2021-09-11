@@ -1,0 +1,534 @@
+.yakusoku{
+    &-boxselect{
+        max-width: 928px;
+        margin: auto;
+        padding: 150px 0 120px;
+        .el{
+            &__listbtn{
+                li{
+                  margin-bottom: 30px;
+                }
+                a{
+                    width: 100%;
+                    transition: all 1s;
+                    border-color: #C4A464;
+                    background-color: #C4A464;
+                    color: #fff;
+                    &:hover{
+                      background-color: #524945;
+                      border-color: #524945;
+                      color: #fff;
+                    }
+                    &::after{
+                    content: "\e906";
+                      margin-top: 1px;
+                      font-size: 10px;
+                      right: 20px;
+                    }
+                }
+            }
+        }
+    }
+    &-ct{
+        position: relative;
+        padding: 30px 0 0;
+        .el{
+            &__header{
+                &__number{
+                    font-family: 'EB Garamond';
+                    color: #fff;
+                    font-size: 200px;
+                    letter-spacing: 2px;
+                    line-height: 1;
+                    margin-right: 40px;
+                    &.-s1{
+                        color: #F4D181;
+                    }
+                    &.-s2{
+                        color: #AABBDF;
+                    }
+                    &.-s3{
+                        color: #F4D181;
+                    }
+                }
+                &__sub{
+                    font-family: 'EB Garamond';
+                    font-size: 110px;
+                    letter-spacing: 2px;
+                    color: #DCD0C4;
+                    line-height: 1;
+                }
+                &__title{
+                    font-family: 'Noto Serif JP', serif;
+                    margin-top: 35px;
+                    font-weight: 500;
+                    color: #524945;
+                    letter-spacing: 8px;
+                    text-align: center;
+                    margin-bottom: 50px;
+                }
+            }
+            &__title{
+                font-family: 'Noto Serif JP', serif;
+                font-size: 40px;
+                font-weight: 500;
+                letter-spacing: 4px;
+                color: #C4A464;
+                margin-bottom: 60px;
+                text-align: center;
+            }
+            &__sub{
+               font-family: 'Noto Serif JP', serif;
+                font-size: 30px;
+                font-weight: 500;
+                color: #524945;
+                margin-bottom: 50px;
+                text-align: center;
+                letter-spacing: 4px;
+            }
+            &__excerpt{
+                p{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        &.-ct1{
+            background-image: url(../../images/pages/yakusoku-ct1-bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: 30px 0 90px;
+             &::before{
+                 content: "";
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 width: 100%;
+                 height: 100%;
+                 background-color: rgba(251, 236,205,.8);
+             }
+             .el{
+                 &__header{
+                     &__sub{
+                         color: #F4D181;
+                     }
+                 }
+                 &__content{
+                    padding: 80px 80px;
+                    background-color: rgba(255, 255, 255, .8);
+                 }
+                 &__title{
+                     color: #877C77;
+                 }
+                 &__list{
+                     font-family: 'Noto Serif JP', serif;
+                     font-size: 22px;
+                     font-weight: 500;
+                     letter-spacing: 2px;
+                     counter-reset: section; 
+                     li{
+                         &::before {
+                             counter-increment: section;
+                             content:counter(section) ". ";
+                             font-size: 38px;
+                             color: #C4A464;
+                         }
+                         span{
+                             color: #6484C4;
+                         }
+                     }
+                 }
+             }
+        }
+        &.-ct2{
+            &::before{
+                content: ' ';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 29%;
+                height: 100%;
+                z-index: 1;
+                background-image: url('../img/pages/yakusoku-ct2-top.png');
+                background-repeat: no-repeat;
+                background-position: top left;
+                background-size: contain;
+                pointer-events: none;
+            }
+            .el{
+                &__content{
+                    position: relative;
+                    padding: 80px 80px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        width: 82%;
+                        height: 100%;
+                        background: rgba(248, 246, 243, .8);
+                    }
+                }
+                &__list{
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                    margin-bottom: 60px;
+                    padding-left: 50px;
+                    li{
+                        margin-bottom: 10px;
+                        &::before {
+                            content: "";
+                            background-image: url(../img/pages/checkbox.png);
+                            background-size: contain;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            width: 24px;
+                            height: 24px;
+                            display: inline-block;
+                            margin-right: 10px;
+                            position: relative;
+                            top: 4px;
+                        }
+                        span{
+                            background: linear-gradient(to top, #F9E8C0 50%, transparent 50%);
+                        }
+                    }
+                }
+            &__title{
+                color: #877C77;
+            }
+             &__thumb {
+                 position: absolute;
+                 right: 0;
+                 width: 41.66666667%;
+                 max-width: 800px;
+                 z-index: 2;
+             }
+            }
+        }
+        &.-ct3{
+            &::before{
+                content: ' ';
+                position: absolute;
+                top: -12%;
+                right: 0;
+                width: 19.3%;
+                height: 100%;
+                z-index: 1;
+                background-image: url('../img/pages/yakusoku-ct3-top.png');
+                background-repeat: no-repeat;
+                background-position: top right;
+                background-size: contain;
+                pointer-events: none;
+            }
+            .el{
+            &__content{
+                    position: relative;
+                    padding: 80px 80px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        z-index: -1;
+                        width: 82%;
+                        height: 100%;
+                        background: rgba(232, 237, 246, .8);
+                    }
+                }
+                &__thumb {
+                    position: absolute;
+                    left: 0;
+                    width: 41.66666667%;
+                    max-width: 800px;
+                    z-index: 2;
+                }
+                &__title{
+                    color: #6484C4;
+                }
+            }
+        }
+        &.-ct4{
+            &::before{
+                content: ' ';
+                position: absolute;
+                top: -5%;
+                left: 0;
+                width: 19%;
+                height: 100%;
+                z-index: 1;
+                background-image: url('../img/pages/yakusoku-ct4-top.png');
+                background-repeat: no-repeat;
+                background-position: top right;
+                background-size: contain;
+                pointer-events: none;
+            }
+            &::after{
+                content: ' ';
+                position: absolute;
+                bottom: 8%;
+                right: 0;
+                width: 19%;
+                height: 100%;
+                z-index: 1;
+                background-image: url(../img/pages/yakusoku-ct4-bottom.png);
+                background-repeat: no-repeat;
+                background-position: bottom right;
+                background-size: contain;
+                pointer-events: none;
+            }
+            .row{
+                &.-n1{
+                    margin-bottom: 100px;
+                }
+                &.-n2{
+                    .el__excerpt{
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+            .el{
+                &__number{
+                    color: #F4D181;
+                }
+                &__content{
+                    position: relative;
+                    padding: 80px 80px 160px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        width: 82%;
+                        height: 100%;
+                        background: rgba(253, 246 ,230, .8);
+                    }
+                }
+                &__list{
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                    margin-bottom: 60px;
+                    padding-left: 50px;
+                    li{
+                        margin-bottom: 10px;
+                        &::before {
+                            content: "";
+                            background-image: url(../img/pages/checkbox.png);
+                            background-size: contain;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            width: 24px;
+                            height: 24px;
+                            display: inline-block;
+                            margin-right: 10px;
+                            position: relative;
+                            top: 4px;
+                        }
+                        span{
+                            background: linear-gradient(to top, #F9E8C0 50%, transparent 50%);
+                        }
+                    }
+                }
+                &__title{
+                    color: #D0B683;
+                }
+                &__thumb {
+                    position: absolute;
+                    right: 0;
+                    width: 41.66666667%;
+                    max-width: 800px;
+                    z-index: 2;
+                    &.-left{
+                        left: 80px;
+                        right: auto;
+                        width: 32.4%;
+                    }
+                }
+                &__meta{
+                    padding-left: 10px;
+                    padding-right: 25px;
+                }
+                &__box{
+                    padding: 30px 50px;
+                    background-color: #FBEFD3;
+                    &__title{
+                        font-size: 25px;
+                        color: #C4A464;
+                        margin-bottom: 15px;
+                    }
+                    ul{
+                        margin-bottom: 30px;
+                        span{
+                            color: #6484C4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width:1699px){
+        &-ct{
+            &.-ct4{
+                .el__thumb{
+                    &.-left {
+                        position: relative;
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+                .el__meta {
+                    width: 90%;
+                }
+            }
+        }
+    }
+    @media (max-width:1599px){
+        &-ct{
+            .el__header__number {
+                font-size: 130px;
+                margin-right: 25px;
+            }
+            .el__header__sub {
+                font-size: 70px;
+            }
+        }
+    }
+    @media (max-width:1399px){
+        &-boxselect {
+            padding: 100px 0 70px;
+        }
+        &-ct{
+            .el__title {
+                font-size: 38px;
+                margin-bottom: 50px;
+            }
+            .el__sub {
+                font-size: 28px;
+                margin-bottom: 40px;
+            }
+            &.-ct4{
+                .el__content {
+                    padding: 80px 80px 80px;
+                }
+                .el__box {
+                    padding: 30px 30px;
+                }
+                .row{
+                    &.-n1 {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            
+        }
+    }
+    @media (max-width:1199px){
+        &-ct{
+            .el__title {
+                font-size: 26px;
+                margin-bottom: 30px;
+            }
+            .el__sub {
+                font-size: 22px;
+                margin-bottom: 30px;
+            }
+            .el__excerpt {
+                font-size: 16px;
+            }
+            &.-ct1{
+                .el__list {
+                    font-size: 18px;
+                    li::before {
+                        font-size: 28px;
+                    }
+                }
+            }
+            &.-ct2{
+                .el__list {
+                    font-size: 16px;
+                    margin-bottom: 50px;
+                    padding-left: 0;
+                    li::before {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+            &.-ct4{
+                .el__box__title {
+                    font-size: 18px;
+                }
+                
+            }
+        }
+    }
+    @media (max-width:991px){
+        &-ct{
+            &.-ct4{
+                .el__thumb.-left {
+                    max-width: 60%;
+                    margin-bottom: 15px;
+                }
+                .el__meta {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    @media (max-width:767px){
+        &-boxselect{
+            .el__listbtn a{
+                padding-right: 20px;
+                &::after {
+                    right: 10px;
+                }
+            }
+        }
+        &-ct{
+            .el__header__number{
+                font-size: 90px;
+                margin-right: 15px;
+            }
+            .el__header__sub {
+                font-size: 50px;
+            }
+            &.-ct2 .el__content::before, &.-ct3 .el__content::before, &.-ct4 .el__content::before {
+                width: 100%;
+            }
+            &.-ct2 .el__thumb {
+                position: relative;
+                width: 100%;
+            }
+            &.-ct3 .el__thumb {
+                position: relative;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            &.-ct4 {
+                .el__meta {
+                    padding-right: 0;
+                }
+                .el__thumb{
+                    position: relative;
+                    width: 100%;
+                    margin-bottom: 15px;
+                    &.-left {
+                        max-width: 100%;
+                    }
+                }
+                .el__meta {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @media (max-width:575px){
+        &-ct{
+            &.-ct1 .el__content, &.-ct2 .el__content, &.-ct3 .el__content, &.-ct4 .el__content {
+                    padding: 50px 30px;
+            }
+        }
+    }
+}

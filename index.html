@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src='assets/js/jquery.min.3.5.1.js' id='jquery-core-js'></script>
+    <script src='./assets/js/jquery.min.3.5.1.js' id='jquery-core-js'></script>
 
     <!-- Bootstrap CSS -->
-    <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link href="./assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!--icomoon-->
     <link rel="stylesheet" href="./assets/css/animate.min.css"/>
@@ -18,7 +18,10 @@
  
     <!--flickity-->
     <link rel="stylesheet" href="./assets/libs/flickity/flickity.min.css"/>
-    <script src="assets/libs/flickity/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity/flickity.pkgd.min.js"></script>
+
+    <!--Marquee-->
+    <script type='text/javascript' src='./assets/libs/jQuery.Marquee/jquery.marquee.min.js'></script>
 
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 
@@ -59,6 +62,7 @@
                             </ul>
                         </li>
                         <li class="menu-item "><a href="">アクセス</a></li>
+                        <li class="menu-item "><a href="">採用情報</a></li>
                         <li class="menu-item "><a href="">Kirariコラム</a></li>
                     </ul>
                 </nav>
@@ -80,7 +84,7 @@
         </div>
 
         <section class="home-slider">
-            <div class="dn__slider flickity slider" data-flickity='{ "cellSelector": ".slider__item","autoPlay": 6000, "pauseAutoPlayOnHover": false ,"cellAlign": "left", "contain": true, "wrapAround": true, "groupCells": true, "pageDots": false,"prevNextButtons": false }'>
+            <div class="dn__slider flickity slider" data-flickity='{ "cellSelector": ".slider__item","autoPlay": 6000, "pauseAutoPlayOnHover": false ,"cellAlign": "left", "contain": true, "wrapAround": true, "groupCells": true, "pageDots": false,"prevNextButtons": false, "pauseAutoPlayOnHover": false }'>
                 <div class="static-banner el__wrapper">
                     <div class="el__box wow fadeIn" data-wow-delay="3s">
                         <h2 class="el__title">All for your SMILE!</h2>
@@ -103,7 +107,7 @@
             </div>
 
             <div class="container position-relative">
-                <div class="schedule wow fadeIn" data-wow-delay="3.5s">
+                <div class="schedule -st1 wow fadeIn" data-wow-delay="4s">
                     <table class="table-schedule" >
                         <thead>
                         <tr>
@@ -150,13 +154,13 @@
         </section>
 
         <section class="home-banner-contact">
-            <div class="container">
+            <div class="container container-1200">
                 <div class="el">
                     <div class="el__thumb">
                         <img src="images/sc-banner-contact.png" alt="【きらり歯科クリニック】福津市日蒔野の歯科・歯医者">
                     </div>
                     <div class="flex-grow-1">
-                        <h6 class="el__text">〒811-3209　福岡県福津市日蒔野６丁目１４−３</h6>
+                        <h6 class="el__text">〒811-3209　<br class="mb">福岡県福津市日蒔野６丁目１４−３</h6>
                         <a href="tel:0940-35-8010" class="el__tel">tel.0940-35-8010</a>
                     </div>
                     <div>
@@ -182,17 +186,17 @@
             <div class="container-md">
                 <div class="row gx-0">
                     <div class="col-lg-6">
-                        <div class="el__thumb wow fadeInLeft" data-wow-delay="1s">
+                        <div class="el__thumb wow fadeInLeft" data-wow-delay=".5s">
                             <img src="images/sc-message.jpg" alt="心からの笑顔が見たいから、">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="el__right js-check-scroll">
                             <div class="el__box">
-                                <p class="el__title -big wow fadeInRight" data-wow-delay=".5s">Message</p>
-                                <h2 class="el__title wow fadeInUp" data-wow-delay="1.5s">心からの笑顔が見たいから、<br>
-                                    ひとりひとりに、全力で。</h2>
-                                <div class="el__excerpt wow fadeInUp" data-wow-delay="1.5s">
+                                <p class="el__title -big wow fadeInRight">Message</p>
+                                <h2 class="el__title wow fadeInUp" data-wow-delay="1s">心からの笑顔が<br class="mb">見たいから、<br>
+                                    ひとりひとりに、<br class="mb">全力で。</h2>
+                                <div class="el__excerpt wow fadeInUp" data-wow-delay="1s">
                                     <p>「もっと歯に自信をもちたい」「よく噛める毎日を過ごしたい」</p>
 
                                     <p>歯のさまざまなお悩みを解決するために、私たちの毎日は真剣勝負です。<br>
@@ -211,47 +215,47 @@
         <section class="home-recommended">
             <header class="sc__header text-center">
                 <div class="container">
-                <p class="sc__title wow fadeInLeft" data-wow-duration="2s">RECOMMENDED</p>
-                <h2 class="sc__sub wow fadeInRight"  data-wow-duration="2s">当院のおすすめ治療</h2>
+                <p class="sc__title wow fadeInLeft" data-wow-duration="1.5s">RECOMMENDED</p>
+                <h2 class="sc__sub wow fadeInRight"  data-wow-duration="1.5s">当院のおすすめ治療</h2>
             </div>
             </header>
            
                 <div class="sc__content">
                     <div class="el__item">
                         <div class="col--left col-md-5 col-lg-5">
-                            <div class="el__thumb dnfix__thumb wow fadeInLeft" data-wow-delay="1s">
+                            <div class="el__thumb dnfix__thumb wow fadeInLeft" data-wow-delay=".5s">
                                 <img src="images/sc-recommended-img-1.png" alt="成人矯正">
                             </div>
                         </div>
                         <div class="col--right col-md-7 col-lg-5">
                             <section class="el__meta js-check-scroll">
-                                <h3 class="el__title wow fadeInRight" data-wow-delay=".5s">成人矯正</h3>
-                                <h4 class="el__sub wow fadeInUp" data-wow-delay="1.5s">憧れられる歯並び、顔立ちに。</h4>
-                                <div class="el__excerpt wow fadeInUp" data-wow-delay="1.5s">
+                                <h3 class="el__title wow fadeInRight">成人矯正</h3>
+                                <h4 class="el__sub wow fadeInUp" data-wow-delay="1s">憧れられる歯並び、顔立ちに。</h4>
+                                <div class="el__excerpt wow fadeInUp" data-wow-delay="1s">
                                     <p>ずっと抱えていた歯並びのお悩み、そろそろ解消しませんか？<br>
                                         美しい口元は、これから訪れるライフイベントでも、あなたに自信を与えてくれるでしょう。<br>
                                         成人矯正では、お仕事などに支障がないようさまざまなタイプの矯正装置をご用意しています。</p>
                                 </div>
-                                <a href="" class="btn btn--secondary wow fadeInUp" data-wow-delay="1.5s">成人矯正</a>
+                                <a href="" class="btn btn--secondary wow fadeInUp" data-wow-delay="1s">成人矯正</a>
                             </section>
                         </div>
                     </div>
                     <div class="el__item">
                         <div class="col--left col-md-5 col-lg-5 order-md-2">
-                            <div class="el__thumb dnfix__thumb wow fadeInRight" data-wow-delay="1s">
+                            <div class="el__thumb dnfix__thumb wow fadeInRight" data-wow-delay=".5s">
                                 <img src="images/sc-recommended-img-2.png" alt="小児矯正">
                             </div>
                         </div>
                         <div class="col--right col-md-7 col-lg-5 ms-lg-auto">
                             <section class="el__meta text-md-end js-check-scroll">
-                                <h3 class="el__title wow fadeInLeft" data-wow-delay=".5s">小児矯正</h3>
-                                <h4 class="el__sub wow fadeInUp" data-wow-delay="1.5s">健康なお口の基礎づくりを。</h4>
-                                <div class="el__excerpt wow fadeInUp" data-wow-delay="1.5s">
-                                    <p>小さいお子さまは、顎の成長を利用して無理なく矯正治療を進めることができます。<br>
-                                        見た目の良さだけでなく、生涯にわたりむし歯や歯周病になりにくい、健康なお口の基礎づくりをかなえます。<br>
-                                        当院では「一生ものの贈り物」として、小児矯正に取り組んでいます。</p>
+                                <h3 class="el__title wow fadeInLeft">小児矯正</h3>
+                                <h4 class="el__sub wow fadeInUp" data-wow-delay="1s">健康なお口の基礎づくりを。</h4>
+                                <div class="el__excerpt wow fadeInUp" data-wow-delay="1s">
+                                    <p>小さいお子さまは、顎の成長を利用して<br class="tb">無理なく矯正治療を進めることができます。<br>
+                                        見た目の良さだけでなく、生涯にわた<br class="tb">りむし歯や歯周病になりにくい、<br class="tb">健康なお口の基礎づくりをかなえます。<br>
+                                        当院では「一生ものの贈り物」として、<br class="tb">小児矯正に取り<br class="pc">組んでいます。</p>
                                 </div>
-                                <a href="" class="btn btn--secondary wow fadeInUp" data-wow-delay="1.5s">小児矯正</a>
+                                <a href="" class="btn btn--secondary wow fadeInUp" data-wow-delay="1s">小児矯正</a>
                             </section>
                         </div>
                     </div>
@@ -301,15 +305,16 @@
         <section class="home-service" style="background-image: url(images/sc-service.png);">
             <div class="container">
                 <header class="sc__header text-center">
-                    <p class="sc__title wow fadeInLeft" data-wow-duration="2s">SERVICE</p>
-                    <h2 class="sc__sub wow fadeInRight" data-wow-duration="2s">診療メニュー</h2>
+                    <p class="sc__title wow fadeInLeft" data-wow-duration="1.5s">SERVICE</p>
+                    <h2 class="sc__sub wow fadeInRight" data-wow-duration="1.5s">診療メニュー</h2>
                 </header>
                 <div class="el__content row">
                     <div class="el__col col-md-6 wow fadeInLeft">
-                        <section class="el__item -color--black" style="background-image: url(images/sc-service-img-1.png)">
+                        <section class="el__item" style="background-image: url(images/sc-service-img-1.png)">
                             <div class="el__meta">
                                 <h3 class="el__title">セラミック治療</h3>
                                 <p class="el__excerpt">自然な白さのセラミックやジルコニア素材を使った詰め物と被せ物を製作。美しさが長持ちし、むし歯や歯周病の予防効果も。</p>
+                                <a href="#" class="el__readmore"><span class="icon-medium-arrow-right"></span></a>
                             </div>
                         </section>
                     </div>
@@ -318,6 +323,7 @@
                             <div class="el__meta">
                                 <h3 class="el__title">入れ歯・義歯</h3>
                                 <p class="el__excerpt">ぴったりとフィットして、しっかり噛めるオーダーメイドの義歯製作。ご希望に合わせた素材や使い心地で、快適な食生活を。</p>
+                                <a href="#" class="el__readmore"><span class="icon-medium-arrow-right"></span></a>
                             </div>
                         </section>
                     </div>
@@ -326,6 +332,7 @@
                             <div class="el__meta">
                                 <h3 class="el__title">インプラント</h3>
                                 <p class="el__excerpt">CT診断やコンピューターシミュレーションなど先進技術を導入。痛みや出血を極力抑えた手術で、噛める幸せをもう一度。</p>
+                                <a href="#" class="el__readmore"><span class="icon-medium-arrow-right"></span></a>
                             </div>
                         </section>
                     </div>
@@ -334,6 +341,7 @@
                             <div class="el__meta">
                                 <h3 class="el__title">ホワイトニング</h3>
                                 <p class="el__excerpt">輝くような白い歯で、口元に清潔感と自信を。ライフスタイルに合わせた治療法で、とびきりの笑顔へ。</p>
+                                <a href="#" class="el__readmore"><span class="icon-medium-arrow-right"></span></a>
                             </div>
                         </section>
                     </div>
@@ -349,7 +357,7 @@
                         <a href="">小児歯科</a>
                     </li>
                     <li class="el__li col-6 col-lg-4">
-                        <a href="">小児矯正・成人矯正</a>
+                        <a href="">小児矯正・<br class="mb">成人矯正</a>
                     </li>
                     <li class="el__li col-6 col-lg-4">
                         <a href="">歯科口腔外科</a>
@@ -373,79 +381,87 @@
         <section class="home-features">
             <div class="container">
                 <header class="sc__header text-center">
-                    <p class="sc__title wow fadeInLeft" data-wow-duration="2s">FEATURES</p>
-                    <h2 class="sc__sub wow fadeInRight" data-wow-duration="2s">当院の特徴</h2>
+                    <p class="sc__title wow fadeInLeft" data-wow-duration="1.5s">FEATURES</p>
+                    <h2 class="sc__sub wow fadeInRight" data-wow-duration="1.5s">当院の特徴</h2>
                 </header>
                 <div class="el__item">
                     <div class="row g-0">
                         <div class="col-md-6">
-                            <div class="el__thumb wow fadeInLeft" data-wow-duration="1s">
+                            <div class="el__thumb wow fadeInLeft" data-wow-duration=".5s">
                                 <img src="images/sc-feature-1.png" alt="「痛み」の少ない優しい治療">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <section class="el__meta">
-                                <p class="el__number wow fadeInRight" data-wow-duration=".5s">01</p>
-                                <h3 class="el__title wow fadeInRight" data-wow-duration=".5s"><span class="color-primary">「痛み」</span>の少ない優しい治療</h3>
-                                <div class="el__excerpt wow fadeInUp" data-wow-duration="1.5s">
+                                <p class="el__number wow fadeInRight">01</p>
+                                <h3 class="el__title wow fadeInRight"><span class="color-primary">「痛み」</span>の少ない<br class="mb">優しい治療</h3>
+                                <div class="el__excerpt wow fadeInUp" data-wow-duration="1s">
                                     「痛み」は通院を断念してしまう原因の一つ。だからこそ、治療による痛みや恐怖感を取り除くことに、毎回の診療で真剣に取り組んでいます。<br>
                                     歯を削る場合も、ドリルではなくレーザー治療器や薬剤での治療を取り入れ、キーンという音や振動による苦痛を軽減しています。<br>
                                     また時間や手間を惜しまず、痛みの少ない麻酔の使用を心がけています。
                                 </div>
-                                <div class="text-center wow fadeInUp" data-wow-duration="1.5s">
+                                <div class="text-center wow fadeInUp" data-wow-duration="1s">
                                     <a class="btn btn--primary"><span>痛みを抑えた治療</span></a>
                                 </div>
                             </section>
                         </div>
                     </div>
                 </div>
-                <div class="el__banner wow fadeInLeft" data-wow-duration="2s">
-                    <img src="images/sc-feature-2.png" alt="【きらり歯科クリニック】福津市日蒔野の歯科・歯医者">
+                <div class="el__banner wow fadeInLeft" data-wow-duration="1.5s">
+                    <div class="el__banner__thumb">
+                        <div class="dnfix__thumb">
+                            <img src="images/sc-feature-2.png" alt="【きらり歯科クリニック】福津市日蒔野の歯科・歯医者">
+                        </div>
+                    </div>
                 </div>
                 <div class="el__item">
                     <div class="row g-0">
                         <div class="col-md-6 order-md-2">
-                            <div class="el__thumb wow fadeInRight" data-wow-duration="1s">
+                            <div class="el__thumb wow fadeInRight" data-wow-duration=".5s">
                                 <img src="images/sc-feature-3.png" alt="「リスク」を抑える先進設備">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <section class="el__meta">
-                                <p class="el__number wow fadeInLeft" data-wow-duration=".5s">02</p>
-                                <h3 class="el__title wow fadeInLeft" data-wow-duration=".5s"><span class="color-primary">「リスク」</span>を抑える先進設備</h3>
-                                <div class="el__excerpt wow fadeInUp" data-wow-duration="1.5s">
+                                <p class="el__number wow fadeInLeft">02</p>
+                                <h3 class="el__title wow fadeInLeft"><span class="color-primary">「リスク」</span>を抑える<br class="mb">先進設備</h3>
+                                <div class="el__excerpt wow fadeInUp" data-wow-duration="1s">
                                     「矯正のように長期にわたる治療や、インプラントのように外科手術を伴う治療も、歯科用CTや治療前のシミュレーションシステムなどの先進設備・技術を駆使することで、リスクを大幅に軽減しています。<br>
                                     また、県内でまだほとんど導入されていないiTero 5D (口腔内3Dスキャナー)を使用することで、レントゲンと違い被爆することがない、近赤外線を使ったむし歯の診査・診断を行なっています。<br>
                                     さらに、世界基準で最高水準レベルの滅菌器を備えるなど、院内感染のリスクにも徹底して取り組んでいます。
                                 </div>
-                                <div class="text-center wow fadeInUp" data-wow-duration="1.5s">
+                                <div class="text-center wow fadeInUp" data-wow-duration="1s">
                                     <a class="btn btn--primary"><span>院内・設備紹介</span></a>
                                 </div>
                             </section>
                         </div>
                     </div>
                 </div>
-                <div class="el__banner wow fadeInLeft" data-wow-duration="2s">
-                    <img src="images/sc-feature-4.png" alt="【きらり歯科クリニック】福津市日蒔野の歯科・歯医者">
+                <div class="el__banner wow fadeInLeft" data-wow-duration="1.5s">
+                    <div class="el__banner__thumb">
+                        <div class="dnfix__thumb">
+                            <img src="images/sc-feature-4.png" alt="【きらり歯科クリニック】福津市日蒔野の歯科・歯医者">
+                        </div>
+                    </div>
                 </div>
                 <div class="el__item">
                     <div class="row g-0">
                         <div class="col-md-6">
-                            <div class="el__thumb wow fadeInLeft" data-wow-duration="1s">
+                            <div class="el__thumb wow fadeInLeft" data-wow-duration=".5s">
                                 <img src="images/sc-feature-5.png" alt="「不安」を残さない丁寧な説明">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <section class="el__meta">
-                                <p class="el__number wow fadeInRight" data-wow-duration=".5s">03</p>
-                                <h3 class="el__title wow fadeInRight" data-wow-duration=".5s"><span class="color-primary">「不安」</span>を残さない丁寧な説明</h3>
-                                <div class="el__excerpt wow fadeInUp" data-wow-duration="1.5s">
+                                <p class="el__number wow fadeInRight">03</p>
+                                <h3 class="el__title wow fadeInRight"><span class="color-primary">「不安」</span>を残さない<br class="mb">丁寧な説明</h3>
+                                <div class="el__excerpt wow fadeInUp" data-wow-duration="1s">
                                     「痛みからやっと解放される！」「どれだけキレイに変われるだろう」「明日から、思いきり笑いたい」<br>
                                     患者さまには、こんな風にワクワクしながら診療時間を過ごしていただきたいのです。<br>
                                     だからこそ、カウンセリングでは治療に対する疑問や不安を残さない丁寧な説明を行っています。<br>
                                     診療室は完全個室なので、どんなことでも遠慮なくお尋ねください。
                                 </div>
-                                <div class="text-center wow fadeInUp" data-wow-duration="1.5s">
+                                <div class="text-center wow fadeInUp" data-wow-duration="1s">
                                     <a class="btn btn--primary"><span>患者さまへのお約束</span></a>
                                 </div>
                             </section>
@@ -454,18 +470,17 @@
                 </div>
             </div>
         </section>
-
         <section class="home-greeting">
             <div class="container">
                 <header class="sc__header text-center">
-                    <p class="sc__title wow fadeInLeft" data-wow-duration="2s">GREETING</p>
-                    <h2 class="sc__sub wow fadeInRight" data-wow-duration="2s">院長あいさつ</h2>
+                    <p class="sc__title wow fadeInLeft" data-wow-duration="1.5s">GREETING</p>
+                    <h2 class="sc__sub wow fadeInRight" data-wow-duration="1.5s">院長あいさつ</h2>
                 </header>
     
                 <div class="el__item">
                     <div class="row">
                         <div class="col-md-6 order-md-2">
-                            <div class="el__thumb wow fadeInRight" data-wow-duration="1s">
+                            <div class="el__thumb wow fadeInRight" data-wow-duration=".5s">
                                 <div class="dnfix__thumb">
                                     <img src="images/sc-greeting-img-1.png" alt="心からの笑顔を引き出す">
                                 </div>
@@ -473,16 +488,16 @@
                         </div>
                         <div class="col-md-6">
                             <div class="el__meta">
-                                <h3 class="el__title wow fadeInLeft" data-wow-duration=".5s">心からの笑顔を引き出す<br>
+                                <h3 class="el__title wow fadeInLeft">心からの笑顔を引き出す<br>
                                     ホームドクターをめざして。</h3>
-                                <div class="el__excerpt wow fadeInUp" data-wow-duration="1.5s">
+                                <div class="el__excerpt wow fadeInUp" data-wow-duration="1s">
                                     <p>【きらり歯科クリニック】のホームページをご覧いただきありがとうございます。<br>
                                         2019年の開業以来、多くの方にご来院いただき、皆さまの笑顔に、日々喜びとやりがいを感じています。</p>
                                     <p>当院では、すべての患者さまに「心からの笑顔」をお届けすることをモットーに、お一人お一人のためのオーダーメイド治療をご提供しています。</p>
                                     <p>むし歯や歯並びを治すのは歯科医師として当たり前。もう一歩進んで、行くたびに自分をもっと好きになれる、笑顔が増える、そんな「ホームドクター」をめざしてまいります。</p>
                                 </div>
-                                <div class="el__ruby wow fadeInUp" data-wow-duration="1.5s">
-                                    <span>松島</span>
+                                <div class="el__ruby wow fadeInUp" data-wow-duration="1s">
+                                    <span>院長</span>
                                     <ruby>松島<rt>まつしま</rt></ruby>
                                     <ruby>耕平<rt>こうへい</rt></ruby>
 
@@ -499,11 +514,13 @@
                     </div>
                 </section>
             </div>
-            <div class="home-greeting-gallery" style="background-image: url(images/home-gallery.png);">
-                
-                <div class="container">
-                    <div class="el__box wow zoomIn js-check-scroll" data-wow-duration="2s">
-                        <h3 class="el__title">私たちにおまかせください！</h3>
+            <div class="home-greeting-gallery">
+                <div class="el__marquee">
+                    <img src="images/home-gallery.png" alt="【きらり歯科クリニック】福津市日蒔野の歯科・歯医者" >
+                </div>
+                <div class="container el__wrap">
+                    <div class="el__box wow zoomIn js-check-scroll" data-wow-duration="1.5s">
+                        <h3 class="el__title">私たち<br class="mb">におまかせください！</h3>
                         <div class="el__excerpt">
                             安心してご来院いただけるよう、院内感染防止に尽力しております。<br>
                             小さなお悩みにも真摯に対応しますので、どんなお口をめざしたいか、私たちにお聞かせください。
@@ -527,8 +544,8 @@
         <section class="home-information">
             <div class="container">
                 <header class="sc__header text-center">
-                    <p class="sc__title wow fadeInLeft" data-wow-duration="2s">INFORMATION</p>
-                    <h2 class="sc__sub wow fadeInRight" data-wow-duration="2s">お知らせ</h2>
+                    <p class="sc__title wow fadeInLeft" data-wow-duration="1.5s">INFORMATION</p>
+                    <h2 class="sc__sub wow fadeInRight" data-wow-duration="1.5s">お知らせ</h2>
                 </header>
                 <div class="row">
                     <div class="col-md-6">
@@ -556,15 +573,15 @@
                             <ul class="el__list">
                                 <li class="el__item">
                                     <div class="el__date">2021.00.00</div>
-                                    <p class="el__excerpt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                    <div class="el__excerpt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
                                 </li>
                                 <li class="el__item">
                                     <div class="el__date">2021.00.00</div>
-                                    <p class="el__excerpt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                    <div class="el__excerpt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
                                 </li>
                                 <li class="el__item">
                                     <div class="el__date">2021.00.00</div>
-                                    <p class="el__excerpt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                    <div class="el__excerpt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
                                 </li>
                             </ul>
                         </article>
@@ -680,7 +697,7 @@
                                 <div>
                                     <p class="el__text">〒811-3209　福岡県福津市日蒔野６丁目１４−３</p>
                                     <p class="el__tel">tel.0940-35-8010</p>
-                                    <a href="#" class="el__btn">WEB予約</a>
+                                    <a href="#" class="el__btn"><span>WEB予約</span></a>
                                 </div>
                                 <div class="schedule -st2">
                                     <table class="table-schedule" >
@@ -728,7 +745,7 @@
                             </div>
                             <div class="sc-footer__map">
                                 <div class="videoWrapper">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.171720305202!2d130.49173541552372!3d33.756228180687565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35422842c6026563%3A0xb9be954b117f10d3!2z44CSODExLTMyMDkg56aP5bKh55yM56aP5rSl5biC5pel6JKU6YeO77yW5LiB55uu77yR77yU4oiS77yT!5e0!3m2!1sja!2sjp!4v1566290076192!5m2!1sja!2sjp" height="380" style="border:0" title="Map"></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d829.2928283185439!2d130.4933841!3d33.7562387!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354229021e795625%3A0x5731d6b029012b6e!2z44GN44KJ44KK5q2v56eR44Kv44Oq44OL44OD44Kv!5e0!3m2!1sja!2s!4v1631242416276!5m2!1sja!2s" height="380" style="border:0;" loading="lazy" title="Map"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -757,6 +774,7 @@
                                 </ul>
                             </li>
                             <li class="menu-item"><a href="">アクセス</a></li>
+                            <li class="menu-item"><a href="">採用情報</a></li>
                             <li class="menu-item"><a href="">Kirariコラム</a></li>
                         </ul>
 
@@ -819,8 +837,8 @@
                         <li class="menu-item"><a href="">院長・スタッフ紹介</a></li>
                         <li class="menu-item"><a href="">院内・設備紹介</a></li>
                         <li class="menu-item"><a href="">アクセス</a></li>
-                        <li class="menu-item"><a href="">Kirariコラム</a></li>
                         <li class="menu-item"><a href="">採用情報</a></li>
+                        <li class="menu-item"><a href="">Kirariコラム</a></li>
                     </ul>
                 </li>
                 <li class="menu-item menu-item-has-children">

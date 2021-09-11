@@ -51,7 +51,7 @@
                 color: #fff;
                 line-height: normal;
                 font-weight: 500;
-                font-size: 21px;
+                font-size: 19px;
                 padding: 5px 0;
                 display: block;
                 &:before{
@@ -157,7 +157,7 @@
     }
     &__content{
         overflow-y:auto;
-        padding: 0 15px;
+        padding: 0 15px 15px;
     }
     &.active{
         left:0;
@@ -258,8 +258,19 @@
             min-width: 25px;
         }
     }
+    .nav__mobile__close{
+        display:none;
+    }
+    .btn--primary {
+        border-color: #6484C4;
+        background-color: #6484C4;
+    }
+
     @media ( max-width: 575px ) {
         width: 100%;
+        .nav__mobile__close{
+            display:flex;
+        }
     }
 }
 /**/

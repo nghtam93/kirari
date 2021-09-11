@@ -40,6 +40,26 @@ a:hover{text-decoration:none;}
 img{
     max-width: 100%;
 }
+br{
+    &.tb{
+        display:none
+    }
+    @media ( max-width: 991px ) {
+        &.pc{
+            display: none;
+        }
+    }
+    @media (min-width:768px) and (max-width:1023px){
+        &.tb{
+            display: block;
+        }
+    }
+    @media ( min-width: 576px ) {
+        &.mb{
+            display: none;
+        }
+    }
+}
 
 /**/
 .sc{
@@ -50,12 +70,12 @@ img{
         font-size: 87px;
         font-family: 'EB Garamond';
         font-weight: 400;
-        color: #D0B683;
-        letter-spacing: 4px;
+        color: rgba(208, 182, 131, .5);
+        letter-spacing: 5px;
     }
     &__sub{
         font-size: 31px;
-        font-weight: 500;
+        font-weight: 700;
         letter-spacing: 10px;
         font-family: 'Noto Serif JP', serif;
     }
@@ -91,16 +111,15 @@ img{
     }
     @media ( max-width: 543px ) {
         &__title {
-            font-size: 36px;
+            font-size: 40px;
         }
         &__sub {
-            font-size: 16px;
+            letter-spacing: 8px;
+            font-size: 18px;
         }
     }
     @media ( max-width: 375px ) {
-        &__title {
-            font-size: 32px;
-        }
+      
     }
 }
 
@@ -118,6 +137,9 @@ img{
     }
     .container {
         max-width: 1304px;
+    }
+    .container-1200 {
+        max-width: 1224px;
     }
     .container-sm{
         max-width: 1048px;
@@ -158,10 +180,11 @@ img{
 
 /*button*/
 .btn{
+    font-family: 'Noto Serif JP', serif;
     position: relative;
     font-size: 20px;
-    line-height: 1.8;
-    padding: 8px 10px 8px;
+    line-height: 1.2;
+    padding: 14px 10px;
     border-color: #524945;
     border-radius: 30px;
     min-width: 295px;
@@ -170,7 +193,6 @@ img{
     letter-spacing: 2px;
     transition: all 1s;
     overflow: hidden;
-    font-family: 'Noto Serif JP', serif;
     &:hover{
         background-color: #524945;
         border-color: #524945;
@@ -180,7 +202,7 @@ img{
     &::after {
         content: "\e901";
         font-family: 'icomoon';
-        font-size: 5px;
+        font-size: 4.4px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -220,6 +242,14 @@ img{
     @media ( max-width: 1299px ) {
         font-size:16px;
         min-width: 255px;
+    }
+    @media ( max-width: 575px ) {
+        .sc__header {
+            padding: 50px 0 50px;
+        }
+        font-size: 14px;
+        min-width: 215px;
+        padding: 10px 10px;
     }
 }
 

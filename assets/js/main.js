@@ -1,20 +1,71 @@
 jQuery(function($) {
     $(document).ready(function(){
 
-        // new WOW().init();
-
+        new WOW().init();
+        if($('body').hasClass( "home" )){
+            $('.el__marquee').marquee({
+                startVisible : true,
+                gap: 0,
+                duration: 30000,
+                duplicated: true
+            });
+        }
+        
         var header_sticky = $('header.header')
         $(window).scroll(function(){
-            stickyHeight = header_sticky.outerHeight() + $('.home-slider').outerHeight();
-
-            $(this).scrollTop()>stickyHeight?header_sticky.addClass("is-sticky"):header_sticky.removeClass("is-sticky")
+            stickyHeight = 0
+            if($('body').hasClass('home')){
+                stickyHeight = header_sticky.outerHeight() + $('.home-slider').outerHeight();
+            }
+            $(this).scrollTop()>=stickyHeight?header_sticky.addClass("is-sticky"):header_sticky.removeClass("is-sticky")
         })
-        // var header_sticky_mb = $('.header__mb')
-        // $(window).scroll(function(){
-        //     stickyHeight_mb = header_sticky_mb.outerHeight();
 
-        //     $(this).scrollTop()>stickyHeight_mb?header_sticky_mb.addClass("is-sticky"):header_sticky_mb.removeClass("is-sticky")
-        // })
+        //
+        var doc = document.documentElement;
+        var w = window;
+      
+        var prevScroll = w.scrollY || doc.scrollTop;
+        var curScroll;
+        var direction = 0;
+        var prevDirection = 0;
+      
+        var header = $('.header__mb')
+      
+        var checkScroll = function() {
+          /*
+          ** Find the direction of scroll
+          ** 0 - initial, 1 - up, 2 - down
+          */
+          curScroll = w.scrollY || doc.scrollTop;
+          if (curScroll > prevScroll) { 
+            //scrolled up
+            direction = 2;
+          }
+          else if (curScroll < prevScroll) { 
+            //scrolled down
+            direction = 1;
+          }
+          if (direction !== prevDirection) {
+            toggleHeader(direction, curScroll);
+          }
+          prevScroll = curScroll;
+        };
+      
+        var toggleHeader = function(direction, curScroll) {
+          if (direction === 2 && curScroll > header.outerHeight()) { 
+            //replace 52 with the height of your header in px
+            header.addClass('hide');
+            prevDirection = direction;
+          }
+          else if (direction === 1) {
+            header.removeClass('hide')
+            prevDirection = direction;
+          }
+        };
+      
+        window.addEventListener('scroll', checkScroll);
+
+
         //===========================
         var buttonAnimations = {
             init: function() {
@@ -69,21 +120,6 @@ jQuery(function($) {
                 $('.nav__mobile').addClass('active')
             }
         });
-        // $('.nav__mobile__close').click(function(){
-        //     $('body').removeClass('modal-open')
-        //     $(this).removeClass('active')
-        //     $('.nav__mobile').removeClass('active')
-        // })
-
-        // var e=$(".nav__mobile .nav__mobile--ul");
-        // e.find(".menu-item-has-children>a").after('<button class="nav__mobile__btn"><i></i></button>'),
-
-        // e.find(".nav__mobile__btn").on("click",function(e){
-        //     e.stopPropagation(),
-        //     $(this).parent().find('.sub-menu').first().is(":visible")?$(this).parent().removeClass("sub-active"):
-        //     $(this).parent().addClass("sub-active"),
-        //     $(this).parent().find('.sub-menu').first().slideToggle()
-        // })
     });
     //-------------------------------------------------
 
@@ -137,4 +173,5 @@ jQuery(function($) {
     }
     open_under('.dnselect__current')
 
+   
 });
