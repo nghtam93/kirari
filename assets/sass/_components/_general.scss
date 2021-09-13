@@ -83,6 +83,9 @@
         }
     }
     @media ( max-width: 575px ) {
+        .el__meta {
+            padding-top: 30px;
+        }
         .el__thumb .dnfix__thumb {
             padding-top: 68%;
         }
@@ -91,6 +94,11 @@
         }
         .el__title {
             font-size: 20px;
+        }
+    }
+    @media ( max-width: 399px ) {
+        .el__sub {
+            font-size: 34px;
         }
     }
 }

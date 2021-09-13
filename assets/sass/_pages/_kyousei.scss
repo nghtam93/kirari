@@ -1,4 +1,24 @@
 .kyousei{
+    &__header{
+        text-align: center;
+        margin-bottom: 100px;
+        &__title{
+            font-family: 'Noto Serif JP', serif;
+            font-size: 30px;
+            font-weight: 500;
+            letter-spacing: 8px;
+            color: #695C55;
+            margin-bottom: 0;
+        }
+        &__sub{
+            font-family: 'EB Garamond';
+            font-size: 60px;
+            letter-spacing: 4px;
+            color: rgba(208, 182, 131, .5);
+            margin-bottom: 30px;
+            line-height: 1;
+        }
+    }
     &-intro{
         position: relative;
         padding: 150px 0;
@@ -6,10 +26,13 @@
         background-size: cover;
         background-position: right;
         .el{
+            &__item{
+                position: relative;
+            }
             &__title{
                 font-family: 'Noto Serif JP', serif;
                 font-size: 37px;
-                letter-spacing: 6px;
+                letter-spacing: 3px;
                 color: #C4A464;
                 margin-bottom: 30px;
             }
@@ -24,26 +47,6 @@
         background-position: top center;
         background-size: cover;
         .el{
-            &__header{
-                text-align: center;
-                margin-bottom: 100px;
-                &__title{
-                    font-family: 'Noto Serif JP', serif;
-                    font-size: 30px;
-                    font-weight: 500;
-                    letter-spacing: 8px;
-                    color: #695C55;
-                    margin-bottom: 0;
-                }
-                &__sub{
-                    font-family: 'EB Garamond';
-                    font-size: 60px;
-                    letter-spacing: 4px;
-                    color: #D0B683;
-                    margin-bottom: 30px;
-                    line-height: 1;
-                }
-            }
             &__item{
                 margin-bottom: 30px;
             }
@@ -99,10 +102,16 @@
     }
     &-pediatric{
         padding: 160px 0 0;
+        &.-n2{
+            padding: 160px 0 150px;
+            .el__title.-bg{
+                background-color: #EAE3DC;
+            }
+        }
         .el{
             &__listbtn{
                 justify-content: center;
-                margin-bottom: 240px;
+                margin-bottom: 130px;
                 li{
                   margin-bottom: 30px;
                 }
@@ -127,6 +136,325 @@
                     }
                 }
             }
+            &__item{
+                margin-bottom: 60px;
+                &.-large{
+                    margin-bottom: 150px;
+                    .el__thumb{
+                        width: calc(100% + 17%);
+                    }
+                    .el__title{
+                        font-size: 37px;
+                        letter-spacing: 3px;
+                        padding: 0;
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+            &__title{
+                font-family: 'Noto Serif JP', serif;
+                font-size: 30px;
+                letter-spacing: 1px;
+                color: #695C55;
+                margin-bottom: 30px;
+                padding: 13px 20px;
+                &.-bg{
+                    background-color: #F9E8C0;
+                }
+            }
+            &__excerpt{
+                letter-spacing: 1px;
+                p+p{
+                    margin-top: 40px;
+                }
+                .-text--color{
+                    color: #C4A464;
+                }
+            }
+            &__header{
+                position: relative;
+                text-align: center;
+                margin-bottom: 85px;
+                &__title{
+                    font-family: 'Noto Serif JP', serif;
+                    font-weight: 500;
+                    font-size: 37px;
+                    letter-spacing: 4px;
+                    color: #695C55;
+                    margin-bottom: 0;
+                    &::after{
+                        content: "";
+                        width: 155px;
+                        height: 1px;
+                        background-color: #C4A464;
+                        display: block;
+                        margin: 15px auto;
+                    }
+                }
+            }
+            &__box{
+                background-color: #FDF6E6;
+                padding: 50px;
+                margin-bottom: 100px;
+                &__title{
+                    font-size: 27px;
+                    letter-spacing: 1px;
+                    color: #524945;
+                    margin-bottom: 20px;
+                    &:before{
+                        content: "■";
+                        display: inline-block;
+                        color: #F4D181;
+                    }
+                }
+                &__item{
+                    &:not(:last-child){
+                        margin-bottom: 30px;
+                    }
+                }
+                ul{
+                    &.-list{
+                        counter-reset: section;
+                        font-size: 18px;
+                        letter-spacing: 1px;
+                        li{
+                            margin-bottom: 20px;
+                        }
+                        .li__title{
+                            position: relative;
+                            border-bottom: 1px solid #F4D181;
+                            padding-bottom: 5px;
+                            margin-bottom: 10px;
+                            font-size: 23px;
+                            &::before{
+                                counter-increment: section;
+                                content: counter(section) ". ";
+                                color: #C4A464;
+                            }
+                        }
+                        .li__excerpt{
+
+                        }
+                    }
+                    &.-list2{
+                        margin-top: 15px;
+                        padding: 20px 20px 10px;
+                        background-color: rgba(255, 255, 255, .65);
+                        display: grid;
+                        grid-template-columns: auto auto auto;
+                        white-space: nowrap;
+                        font-size: 19px;
+                        letter-spacing: 1px;
+                        margin-bottom: 50px;
+                        li{
+                            margin-bottom: 10px;
+                            &::before{
+                                content: "● ";
+                                color: #F4D181;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .pediatric__text{
+            font-size: 22px;
+            letter-spacing: 1px;
+            color: #C4A464;
+            text-align: center;
+            .el__button{
+                margin-bottom: 30px;
+                margin-top: 30px;
+                min-width: 660px;
+            }
+        }
+    }
+    @media ( max-width: 1499px ) {
+        &-pediatric .el__item.-large .el__thumb{
+            width: 100%;
+        }
+        &-intro{
+            background-position: 80% center;
+        }
+    }
+    @media ( max-width: 1199px ) {
+        &__header {
+            margin-bottom: 80px;
+            &__title {
+                font-size: 26px;
+            }
+            &__sub {
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+        }
+        
+        &-features {
+            padding: 80px 0 70px;
+            .el__title {
+                font-size: 24px;
+                min-height: 70px;
+            }
+            .el__excerpt {
+                font-size: 16px;
+            }
+        }
+        &-why {
+            padding-top: 80px;
+            .el__header__title {
+                font-size: 30px;
+            }
+            .el__title {
+                font-size: 20px;
+            }
+            .el__excerpt {
+                font-size: 16px;
+            }
+        }
+       
+        &-intro{
+            .el__excerpt {
+                font-size: 16px;
+            }
+        }
+        
+        &-pediatric{
+            padding: 100px 0 0;
+            &.-n2 {
+                padding: 70px 0 40px;
+            }
+            .el__listbtn {
+                margin-bottom: 70px;
+            }
+            .el__item{
+                &.-large .el__title {
+                    font-size: 30px;
+                    margin-bottom: 30px;
+                }
+            }
+            .el__title {
+                font-size: 24px;
+            }
+            .el__header__title {
+                font-size: 30px;
+            }
+            .el__box{
+                ul.-list {
+                    font-size: 16px;
+                    .li__title {
+                        font-size: 22px;
+                    }
+                }
+                ul.-list2 {
+                    grid-template-columns: auto auto;
+                    font-size: 18px;
+                }
+            }
+            .el__box__item {
+                font-size: 16px;
+            }
+            .el__excerpt {
+                font-size: 16px;
+            }
+        }
+    }
+    @media ( max-width: 991px ) {
+        &-intro {
+            padding: 80px 0;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(255, 255, 255, .3);
+            }
+            .el__title {
+                font-size: 30px;
+            }
+        }
+        &-features{
+            .el__title {
+                font-size: 22px;
+                min-height: 70px;
+            }
+        }
+        &-why{
+            .el__item {
+                margin-bottom: 40px;
+            }
+        }
+        &-pediatric{
+            .el__box ul.-list2 {
+                white-space: inherit;
+                grid-gap: 5px;
+            }
+            .el__item{
+                &.-large .el__title {
+                    font-size: 24px;
+                }
+            }
+            .el__title {
+                font-size: 20px;
+            }
+            .el__box__title {
+                font-size: 24px;
+            }
+            .el__box ul.-list .li__title {
+                font-size: 20px;
+            }
+            .pediatric__text {
+                font-size: 18px;
+            }
+            .el__title {
+                font-size: 18px;
+            }
+        }
+    }
+    @media ( max-width: 767px ) {
+        &-pediatric{
+            .pediatric__text .el__button {
+                min-width: 100%;
+            }
+            .el__item{
+                &.-large {
+                    margin-bottom: 70px;
+                }
+                .el__thumb{
+                    margin-bottom: 15px;
+                }
+            }
+            .el__header {
+                margin-bottom: 50px;
+            }
+            .el__box {
+                padding: 30px 25px;
+                margin-bottom: 50px;
+                &__title {
+                    font-size: 22px;
+                }
+                ul.-list {
+                    font-size: 15px;
+                }
+                ul.-list2 li {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    @media ( max-width: 479px ) {
+        &__header__title {
+            font-size: 22px;
+        }
+        &__header__sub {
+            font-size: 34px;
+        }
+        &-why .el__header__title {
+            font-size: 26px;
+        }
+        &-pediatric .el__box ul.-list2 {
+            display: block;
         }
     }
 }

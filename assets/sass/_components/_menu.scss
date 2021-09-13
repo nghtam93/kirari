@@ -18,7 +18,9 @@
     ul{
         list-style:none;padding:0;margin:0;
     }
-    
+    &.-subpage .dn__menu > li {
+        padding: 0px 3px;
+    }
     .dn__menu{
         padding:0px 0;-webkit-transition:padding .5s;-o-transition:padding .5s;transition:padding .5s;
         background:none;

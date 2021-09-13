@@ -57,45 +57,6 @@ br.tb {
     display: none; } }
 
 /**/
-.sc__header {
-  padding: 100px 0 100px; }
-.sc__title {
-  font-size: 87px;
-  font-family: 'EB Garamond';
-  font-weight: 400;
-  color: rgba(208, 182, 131, 0.5);
-  letter-spacing: 5px; }
-.sc__sub {
-  font-size: 31px;
-  font-weight: 700;
-  letter-spacing: 10px;
-  font-family: 'Noto Serif JP', serif; }
-@media (max-width: 1599px) {
-  .sc__header {
-    padding: 80px 0 80px; }
-  .sc__title {
-    font-size: 60px; }
-  .sc__sub {
-    font-size: 22px; } }
-@media (max-width: 1299px) {
-  .sc__title {
-    font-size: 50px; }
-  .sc__sub {
-    font-size: 20px; } }
-@media (max-width: 991px) {
-  .sc__title {
-    font-size: 45px; } }
-@media (max-width: 767px) {
-  .sc__sub {
-    font-size: 18px; } }
-@media (max-width: 543px) {
-  .sc__title {
-    font-size: 40px; }
-  .sc__sub {
-    letter-spacing: 8px;
-    font-size: 18px; } }
-
-/**/
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -115,6 +76,12 @@ br.tb {
   padding-left: 1rem;
   padding-right: 1rem; }
 
+@media (min-width: 992px) {
+  .col-lg-20 {
+    width: 20%; }
+
+  .col-lg-80 {
+    width: 80%; } }
 @media (min-width: 1200px) {
   .container-md {
     max-width: 1540px; }
@@ -125,14 +92,14 @@ br.tb {
   .container-1200 {
     max-width: 1224px; }
 
+  .container-1024 {
+    max-width: 1048px; }
+
   .container-sm {
     max-width: 1048px; } }
-@media (min-width: 992px) {
-  .col-lg-20 {
-    width: 20%; }
-
-  .col-lg-80 {
-    width: 80%; } }
+@media (min-width: 1400px) {
+  .container-lg-1324 {
+    max-width: 1348px; } }
 .container-fluid {
   max-width: 1400px; }
 
@@ -195,7 +162,7 @@ br.tb {
   position: relative;
   font-size: 20px;
   line-height: 1.2;
-  padding: 14px 10px;
+  padding: 14px 40px;
   border-color: #524945;
   border-radius: 30px;
   min-width: 295px;
@@ -249,7 +216,7 @@ br.tb {
     .btn {
       font-size: 14px;
       min-width: 215px;
-      padding: 10px 10px; }
+      padding: 14px 30px; }
       .btn .sc__header {
         padding: 50px 0 50px; } }
 
@@ -274,6 +241,8 @@ br.tb {
     list-style: none;
     padding: 0;
     margin: 0; }
+  .main__nav.-subpage .dn__menu > li {
+    padding: 0px 3px; }
   .main__nav .dn__menu {
     padding: 0px 0;
     -webkit-transition: padding .5s;
@@ -647,7 +616,8 @@ br.tb {
     margin-bottom: 5px;
     line-height: 1;
     letter-spacing: 1px;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    white-space: nowrap; }
     .header__hotline:hover {
       color: #fff; }
   .header__btn {
@@ -868,6 +838,9 @@ br.tb {
   @media (max-width: 991px) {
     .sc-copyright {
       margin-bottom: 76px; } }
+  @media (max-width: 575px) {
+    .sc-copyright {
+      margin-bottom: 68px; } }
 
 .sc-footer__bar {
   position: fixed;
@@ -1003,12 +976,55 @@ br.tb {
       .page__header .el__title {
         color: #e4e4e4; } }
   @media (max-width: 575px) {
+    .page__header .el__meta {
+      padding-top: 30px; }
     .page__header .el__thumb .dnfix__thumb {
       padding-top: 68%; }
     .page__header .el__sub {
       font-size: 40px; }
     .page__header .el__title {
       font-size: 20px; } }
+  @media (max-width: 399px) {
+    .page__header .el__sub {
+      font-size: 34px; } }
+
+.sc__header {
+  padding: 100px 0 100px; }
+.sc__title {
+  font-size: 87px;
+  font-family: 'EB Garamond';
+  font-weight: 400;
+  color: rgba(208, 182, 131, 0.5);
+  letter-spacing: 5px; }
+.sc__sub {
+  font-size: 31px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  font-family: 'Noto Serif JP', serif; }
+@media (max-width: 1599px) {
+  .sc__header {
+    padding: 80px 0 80px; }
+  .sc__title {
+    font-size: 60px; }
+  .sc__sub {
+    font-size: 22px; } }
+@media (max-width: 1299px) {
+  .sc__title {
+    font-size: 50px; }
+  .sc__sub {
+    font-size: 20px; } }
+@media (max-width: 991px) {
+  .sc__title {
+    font-size: 45px; } }
+@media (max-width: 767px) {
+  .sc__sub {
+    font-size: 18px; } }
+@media (max-width: 543px) {
+  .sc__title {
+    font-size: 40px; }
+  .sc__sub {
+    letter-spacing: 8px;
+    font-size: 18px; } }
 
 .home-slider {
   position: relative;
@@ -1245,6 +1261,10 @@ br.tb {
       min-width: 24px; }
     .schedule.-st2 {
       font-size: 13px; } }
+  @media (max-width: 375px) {
+    .schedule .table-schedule thead th:first-child {
+      min-width: 108px;
+      letter-spacing: 6px; } }
 
 .home-banner-contact {
   position: relative;
@@ -1871,7 +1891,9 @@ br.tb {
       margin-left: calc(var(--bs-gutter-x) * -.5); }
       .home-service .el__list.-medium li {
         padding-right: calc(var(--bs-gutter-x) * .5);
-        padding-left: calc(var(--bs-gutter-x) * .5); } }
+        padding-left: calc(var(--bs-gutter-x) * .5); }
+    .home-service .el__readmore {
+      font-size: 7px; } }
   @media (max-width: 575px) {
     .home-service .el__meta {
       padding: 30px 25px; }
@@ -2953,16 +2975,35 @@ br.tb {
   .service-intro .el__title {
     font-size: 21px; } }
 
+.kyousei__header {
+  text-align: center;
+  margin-bottom: 100px; }
+  .kyousei__header__title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    color: #695C55;
+    margin-bottom: 0; }
+  .kyousei__header__sub {
+    font-family: 'EB Garamond';
+    font-size: 60px;
+    letter-spacing: 4px;
+    color: rgba(208, 182, 131, 0.5);
+    margin-bottom: 30px;
+    line-height: 1; }
 .kyousei-intro {
   position: relative;
   padding: 150px 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right; }
+  .kyousei-intro .el__item {
+    position: relative; }
   .kyousei-intro .el__title {
     font-family: 'Noto Serif JP', serif;
     font-size: 37px;
-    letter-spacing: 6px;
+    letter-spacing: 3px;
     color: #C4A464;
     margin-bottom: 30px; }
   .kyousei-intro .el__excerpt {
@@ -2972,23 +3013,6 @@ br.tb {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover; }
-  .kyousei-features .el__header {
-    text-align: center;
-    margin-bottom: 100px; }
-    .kyousei-features .el__header__title {
-      font-family: 'Noto Serif JP', serif;
-      font-size: 30px;
-      font-weight: 500;
-      letter-spacing: 8px;
-      color: #695C55;
-      margin-bottom: 0; }
-    .kyousei-features .el__header__sub {
-      font-family: 'EB Garamond';
-      font-size: 60px;
-      letter-spacing: 4px;
-      color: #D0B683;
-      margin-bottom: 30px;
-      line-height: 1; }
   .kyousei-features .el__item {
     margin-bottom: 30px; }
   .kyousei-features .el__title {
@@ -3029,9 +3053,13 @@ br.tb {
     margin-bottom: 30px; }
 .kyousei-pediatric {
   padding: 160px 0 0; }
+  .kyousei-pediatric.-n2 {
+    padding: 160px 0 150px; }
+    .kyousei-pediatric.-n2 .el__title.-bg {
+      background-color: #EAE3DC; }
   .kyousei-pediatric .el__listbtn {
     justify-content: center;
-    margin-bottom: 240px; }
+    margin-bottom: 130px; }
     .kyousei-pediatric .el__listbtn li {
       margin-bottom: 30px; }
     .kyousei-pediatric .el__listbtn a {
@@ -3051,5 +3079,579 @@ br.tb {
         margin-top: 1px;
         font-size: 10px;
         right: 20px; }
+  .kyousei-pediatric .el__item {
+    margin-bottom: 60px; }
+    .kyousei-pediatric .el__item.-large {
+      margin-bottom: 150px; }
+      .kyousei-pediatric .el__item.-large .el__thumb {
+        width: calc(100% + 17%); }
+      .kyousei-pediatric .el__item.-large .el__title {
+        font-size: 37px;
+        letter-spacing: 3px;
+        padding: 0;
+        margin-bottom: 40px; }
+  .kyousei-pediatric .el__title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #695C55;
+    margin-bottom: 30px;
+    padding: 13px 20px; }
+    .kyousei-pediatric .el__title.-bg {
+      background-color: #F9E8C0; }
+  .kyousei-pediatric .el__excerpt {
+    letter-spacing: 1px; }
+    .kyousei-pediatric .el__excerpt p + p {
+      margin-top: 40px; }
+    .kyousei-pediatric .el__excerpt .-text--color {
+      color: #C4A464; }
+  .kyousei-pediatric .el__header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 85px; }
+    .kyousei-pediatric .el__header__title {
+      font-family: 'Noto Serif JP', serif;
+      font-weight: 500;
+      font-size: 37px;
+      letter-spacing: 4px;
+      color: #695C55;
+      margin-bottom: 0; }
+      .kyousei-pediatric .el__header__title::after {
+        content: "";
+        width: 155px;
+        height: 1px;
+        background-color: #C4A464;
+        display: block;
+        margin: 15px auto; }
+  .kyousei-pediatric .el__box {
+    background-color: #FDF6E6;
+    padding: 50px;
+    margin-bottom: 100px; }
+    .kyousei-pediatric .el__box__title {
+      font-size: 27px;
+      letter-spacing: 1px;
+      color: #524945;
+      margin-bottom: 20px; }
+      .kyousei-pediatric .el__box__title:before {
+        content: "■";
+        display: inline-block;
+        color: #F4D181; }
+    .kyousei-pediatric .el__box__item:not(:last-child) {
+      margin-bottom: 30px; }
+    .kyousei-pediatric .el__box ul.-list {
+      counter-reset: section;
+      font-size: 18px;
+      letter-spacing: 1px; }
+      .kyousei-pediatric .el__box ul.-list li {
+        margin-bottom: 20px; }
+      .kyousei-pediatric .el__box ul.-list .li__title {
+        position: relative;
+        border-bottom: 1px solid #F4D181;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        font-size: 23px; }
+        .kyousei-pediatric .el__box ul.-list .li__title::before {
+          counter-increment: section;
+          content: counter(section) ". ";
+          color: #C4A464; }
+    .kyousei-pediatric .el__box ul.-list2 {
+      margin-top: 15px;
+      padding: 20px 20px 10px;
+      background-color: rgba(255, 255, 255, 0.65);
+      display: grid;
+      grid-template-columns: auto auto auto;
+      white-space: nowrap;
+      font-size: 19px;
+      letter-spacing: 1px;
+      margin-bottom: 50px; }
+      .kyousei-pediatric .el__box ul.-list2 li {
+        margin-bottom: 10px; }
+        .kyousei-pediatric .el__box ul.-list2 li::before {
+          content: "● ";
+          color: #F4D181; }
+  .kyousei-pediatric .pediatric__text {
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #C4A464;
+    text-align: center; }
+    .kyousei-pediatric .pediatric__text .el__button {
+      margin-bottom: 30px;
+      margin-top: 30px;
+      min-width: 660px; }
+@media (max-width: 1499px) {
+  .kyousei-pediatric .el__item.-large .el__thumb {
+    width: 100%; }
+  .kyousei-intro {
+    background-position: 80% center; } }
+@media (max-width: 1199px) {
+  .kyousei__header {
+    margin-bottom: 80px; }
+    .kyousei__header__title {
+      font-size: 26px; }
+    .kyousei__header__sub {
+      font-size: 40px;
+      margin-bottom: 20px; }
+  .kyousei-features {
+    padding: 80px 0 70px; }
+    .kyousei-features .el__title {
+      font-size: 24px;
+      min-height: 70px; }
+    .kyousei-features .el__excerpt {
+      font-size: 16px; }
+  .kyousei-why {
+    padding-top: 80px; }
+    .kyousei-why .el__header__title {
+      font-size: 30px; }
+    .kyousei-why .el__title {
+      font-size: 20px; }
+    .kyousei-why .el__excerpt {
+      font-size: 16px; }
+  .kyousei-intro .el__excerpt {
+    font-size: 16px; }
+  .kyousei-pediatric {
+    padding: 100px 0 0; }
+    .kyousei-pediatric.-n2 {
+      padding: 70px 0 40px; }
+    .kyousei-pediatric .el__listbtn {
+      margin-bottom: 70px; }
+    .kyousei-pediatric .el__item.-large .el__title {
+      font-size: 30px;
+      margin-bottom: 30px; }
+    .kyousei-pediatric .el__title {
+      font-size: 24px; }
+    .kyousei-pediatric .el__header__title {
+      font-size: 30px; }
+    .kyousei-pediatric .el__box ul.-list {
+      font-size: 16px; }
+      .kyousei-pediatric .el__box ul.-list .li__title {
+        font-size: 22px; }
+    .kyousei-pediatric .el__box ul.-list2 {
+      grid-template-columns: auto auto;
+      font-size: 18px; }
+    .kyousei-pediatric .el__box__item {
+      font-size: 16px; }
+    .kyousei-pediatric .el__excerpt {
+      font-size: 16px; } }
+@media (max-width: 991px) {
+  .kyousei-intro {
+    padding: 80px 0; }
+    .kyousei-intro:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.3); }
+    .kyousei-intro .el__title {
+      font-size: 30px; }
+  .kyousei-features .el__title {
+    font-size: 22px;
+    min-height: 70px; }
+  .kyousei-why .el__item {
+    margin-bottom: 40px; }
+  .kyousei-pediatric .el__box ul.-list2 {
+    white-space: inherit;
+    grid-gap: 5px; }
+  .kyousei-pediatric .el__item.-large .el__title {
+    font-size: 24px; }
+  .kyousei-pediatric .el__title {
+    font-size: 20px; }
+  .kyousei-pediatric .el__box__title {
+    font-size: 24px; }
+  .kyousei-pediatric .el__box ul.-list .li__title {
+    font-size: 20px; }
+  .kyousei-pediatric .pediatric__text {
+    font-size: 18px; }
+  .kyousei-pediatric .el__title {
+    font-size: 18px; } }
+@media (max-width: 767px) {
+  .kyousei-pediatric .pediatric__text .el__button {
+    min-width: 100%; }
+  .kyousei-pediatric .el__item.-large {
+    margin-bottom: 70px; }
+  .kyousei-pediatric .el__item .el__thumb {
+    margin-bottom: 15px; }
+  .kyousei-pediatric .el__header {
+    margin-bottom: 50px; }
+  .kyousei-pediatric .el__box {
+    padding: 30px 25px;
+    margin-bottom: 50px; }
+    .kyousei-pediatric .el__box__title {
+      font-size: 22px; }
+    .kyousei-pediatric .el__box ul.-list {
+      font-size: 15px; }
+    .kyousei-pediatric .el__box ul.-list2 li {
+      font-size: 15px; } }
+@media (max-width: 479px) {
+  .kyousei__header__title {
+    font-size: 22px; }
+  .kyousei__header__sub {
+    font-size: 34px; }
+  .kyousei-why .el__header__title {
+    font-size: 26px; }
+  .kyousei-pediatric .el__box ul.-list2 {
+    display: block; } }
+
+.invisalign__header {
+  text-align: center;
+  margin-bottom: 100px; }
+  .invisalign__header__title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: #695C55;
+    font-weight: 500;
+    margin-bottom: 0; }
+  .invisalign__header__sub {
+    font-family: 'EB Garamond', serif;
+    font-size: 60px;
+    letter-spacing: 2px;
+    color: #D0B683;
+    margin-bottom: 30px;
+    line-height: 1; }
+.invisalign-intro {
+  position: relative;
+  padding: 120px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left; }
+  .invisalign-intro .el__item {
+    position: relative; }
+  .invisalign-intro .el__title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 37px;
+    letter-spacing: 3px;
+    color: #6484C4;
+    margin-bottom: 30px; }
+  .invisalign-intro .el__excerpt {
+    letter-spacing: 2px; }
+.invisalign-introtext {
+  padding: 120px 0 90px; }
+  .invisalign-introtext .el__item {
+    margin-bottom: 80px;
+    letter-spacing: 1px; }
+    .invisalign-introtext .el__item .-color {
+      color: #C4A464; }
+    .invisalign-introtext .el__item p + p {
+      margin-top: 40px; }
+    .invisalign-introtext .el__item .el__title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 33px;
+      letter-spacing: 2px;
+      color: #695C55;
+      margin-bottom: 40px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #6484C4; }
+  .invisalign-introtext .el__box {
+    padding: 50px 50px;
+    margin-bottom: 150px;
+    background-color: #F8F6F3; }
+    .invisalign-introtext .el__box__title {
+      display: inline-block;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 25px;
+      letter-spacing: 2px;
+      color: #695C55;
+      margin-bottom: 30px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #C4A464;
+      text-align: center; }
+    .invisalign-introtext .el__box__sub {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 33px;
+      letter-spacing: 2px;
+      color: #C4A464;
+      margin-bottom: 40px;
+      text-align: center; }
+    .invisalign-introtext .el__box .-list li {
+      margin-bottom: 15px; }
+      .invisalign-introtext .el__box .-list li::before {
+        content: "●";
+        color: #F4D181;
+        margin-right: 5px; }
+  .invisalign-introtext .el__listbtn {
+    justify-content: center;
+    padding: 0 40px; }
+    .invisalign-introtext .el__listbtn li {
+      margin-bottom: 30px; }
+    .invisalign-introtext .el__listbtn a {
+      width: 100%;
+      max-width: 460px;
+      padding: 14px 25px 14px 10px;
+      transition: all 1s;
+      border-color: #C4A464;
+      background-color: #C4A464;
+      color: #fff; }
+      .invisalign-introtext .el__listbtn a:hover {
+        background-color: #524945;
+        border-color: #524945;
+        color: #fff; }
+      .invisalign-introtext .el__listbtn a::after {
+        content: "\e906";
+        margin-top: 1px;
+        font-size: 10px;
+        right: 20px; }
+.invisalign-merit {
+  padding: 150px 0;
+  background-color: #F8F6F3; }
+  .invisalign-merit .el__box {
+    background-color: #fff; }
+  .invisalign-merit table {
+    border-top: 1px solid #a39993;
+    border-color: #a39993;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle; }
+    .invisalign-merit table th:nth-child(2n), .invisalign-merit table td:nth-child(2n) {
+      background: #F8F6F3; }
+    .invisalign-merit table th {
+      font-weight: 400;
+      padding: 12px 10px;
+      border-color: #a39993 !important; }
+    .invisalign-merit table tbody {
+      font-size: 18px; }
+    .invisalign-merit table p {
+      font-size: 27px;
+      letter-spacing: 1px;
+      line-height: 1;
+      margin-bottom: 5px; }
+    .invisalign-merit table .-color--primary {
+      color: #C4A464; }
+    .invisalign-merit table .-color--pink {
+      color: #D45787; }
+.invisalign-our {
+  padding: 150px 0; }
+  .invisalign-our .el__header__title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: #695C55;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #C4A464; }
+  .invisalign-our .el__item {
+    margin-bottom: 60px;
+    letter-spacing: 1px; }
+  .invisalign-our .el__title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #695C55;
+    margin-bottom: 30px; }
+    .invisalign-our .el__title:not(.-bg)::before {
+      content: '●';
+      display: inline-block;
+      color: #EAE3DC;
+      margin-right: 10px; }
+    .invisalign-our .el__title.-bg {
+      padding: 13px 20px;
+      background-color: #EAE3DC; }
+  .invisalign-our .el__text {
+    letter-spacing: 1px;
+    color: #C4A464;
+    text-align: center;
+    margin-bottom: 60px; }
+  .invisalign-our .el__box {
+    max-width: 1024px;
+    padding: 40px 40px;
+    margin: auto auto 120px;
+    text-align: center;
+    background-color: #FDF6E6;
+    letter-spacing: 1px; }
+    .invisalign-our .el__box--title {
+      font-size: 27px;
+      color: #C4A464;
+      margin-bottom: 20px; }
+.invisalign-flow {
+  padding: 150px 0;
+  background-color: #F8F6F3; }
+  .invisalign-flow .col--step {
+    position: relative;
+    width: 13.8%; }
+  .invisalign-flow .col--content {
+    width: 86.2%; }
+  .invisalign-flow .col--thumb {
+    width: 43.2%; }
+  .invisalign-flow .col--excerpt {
+    width: 56.8%; }
+  .invisalign-flow .el__item {
+    --el-bottom: 130px;
+    margin-bottom: var(--el-bottom); }
+    .invisalign-flow .el__item:not(:last-child) .col--step::after {
+      content: "";
+      width: 1px;
+      height: calc(100% + var(--el-bottom));
+      background-color: #C4A464;
+      position: absolute;
+      top: 0;
+      left: 50%; }
+  .invisalign-flow .el--step {
+    position: relative;
+    z-index: 1;
+    background: #f8f6f3;
+    font-family: 'EB Garamond';
+    width: 140px;
+    height: 140px;
+    border: 1px solid #C4A464;
+    color: #D0B683;
+    font-size: 27px;
+    border-radius: 50%;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto; }
+    .invisalign-flow .el--step .-text {
+      font-size: 62px; }
+  .invisalign-flow .el--title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 33px;
+    letter-spacing: 1px;
+    color: #9E8146;
+    margin-bottom: 30px; }
+  .invisalign-flow .el--excerpt {
+    margin-bottom: 20px; }
+  .invisalign-flow .el__btn {
+    font-size: 27px;
+    letter-spacing: 2px;
+    min-width: 400px;
+    margin-bottom: 15px;
+    padding: 13px 15px; }
+    .invisalign-flow .el__btn::after {
+      display: none; }
+@media (max-width: 1499px) {
+  .invisalign-intro {
+    background-position: 40% center; } }
+@media (max-width: 1399px) {
+  .invisalign-introtext {
+    padding: 100px 0; }
+    .invisalign-introtext .el__box {
+      margin-bottom: 100px; }
+  .invisalign-merit {
+    padding: 100px 0; }
+  .invisalign-our {
+    padding: 100px 0; }
+  .invisalign-flow {
+    padding: 100px 0; }
+    .invisalign-flow .el--step {
+      width: 120px;
+      height: 120px;
+      font-size: 22px; }
+      .invisalign-flow .el--step .-text {
+        font-size: 52px; }
+    .invisalign-flow .el__btn {
+      padding: 8px 15px;
+      font-size: 20px;
+      min-width: 320px; }
+    .invisalign-flow .el__item {
+      --el-bottom: 50px; } }
+@media (max-width: 1199px) {
+  .invisalign__header__sub {
+    font-size: 50px;
+    margin-bottom: 20px; }
+  .invisalign__header__title {
+    font-size: 26px; }
+  .invisalign-intro {
+    padding: 80px 0; }
+    .invisalign-intro .el__title {
+      font-size: 30px; }
+  .invisalign-our .el__title {
+    font-size: 22px; } }
+@media (max-width: 991px) {
+  .invisalign__header__sub {
+    font-size: 40px; }
+  .invisalign__header__title {
+    font-size: 24px; }
+  .invisalign-merit table tbody {
+    font-size: 16px; }
+  .invisalign-merit table p {
+    font-size: 22px; }
+  .invisalign-introtext {
+    font-size: 16px; }
+    .invisalign-introtext .el__item .el__title {
+      font-size: 24px; }
+    .invisalign-introtext .el__box__title {
+      font-size: 20px; }
+    .invisalign-introtext .el__box__sub {
+      font-size: 26px;
+      margin-bottom: 30px; }
+  .invisalign-intro {
+    background-position: 20% center; }
+  .invisalign-our {
+    padding: 100px 0 50px;
+    font-size: 16px; }
+    .invisalign-our .el__header__title {
+      font-size: 26px;
+      margin-bottom: 40px; }
+    .invisalign-our .el__box--title {
+      font-size: 24px; }
+  .invisalign-flow {
+    padding: 100px 0 10px; }
+    .invisalign-flow .el--step {
+      width: 90px;
+      height: 90px;
+      font-size: 18px; }
+      .invisalign-flow .el--step .-text {
+        font-size: 42px; }
+    .invisalign-flow .el--title {
+      font-size: 26px;
+      margin-bottom: 15px; }
+    .invisalign-flow .el--excerpt {
+      font-size: 16px; } }
+@media (max-width: 767px) {
+  .invisalign-intro .el__title {
+    font-size: 26px; }
+  .invisalign-introtext .el__item .el__title {
+    font-size: 20px; }
+  .invisalign-flow .col--step {
+    width: 115px; }
+  .invisalign-flow .col--content {
+    width: calc(100% - 115px); }
+  .invisalign-flow .col--thumb {
+    width: 100%;
+    margin-bottom: 15px; }
+  .invisalign-flow .col--excerpt {
+    width: 100%; } }
+@media (max-width: 575px) {
+  .invisalign-merit {
+    padding: 80px 0; }
+  .invisalign-introtext {
+    padding: 80px 0; }
+    .invisalign-introtext .el__box {
+      padding: 40px 30px; }
+    .invisalign-introtext .el__item {
+      margin-bottom: 50px; }
+  .invisalign-our {
+    padding: 80px 0 20px;
+    font-size: 16px; }
+  .invisalign__header {
+    margin-bottom: 50px; }
+  .invisalign__header__title {
+    font-size: 22px; }
+  .invisalign-intro .el__title {
+    font-size: 25px; }
+  .invisalign-flow .el__item {
+    --el-bottom: 30px; }
+  .invisalign-flow .el__btn {
+    font-size: 16px;
+    min-width: 250px; }
+  .invisalign-flow .el--title {
+    font-size: 20px; } }
+@media (max-width: 399px) {
+  .invisalign-flow .col--step {
+    width: 100px; }
+  .invisalign-flow .el--step {
+    width: 80px;
+    height: 80px;
+    font-size: 16px; }
+    .invisalign-flow .el--step .-text {
+      font-size: 36px; }
+  .invisalign-flow .col--content {
+    width: calc(100% - 100px); }
+  .invisalign-flow .el__btn {
+    padding: 8px 10px;
+    min-width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
