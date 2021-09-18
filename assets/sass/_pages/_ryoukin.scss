@@ -1,0 +1,102 @@
+.ryoukin{
+    &-pricelist{
+        padding: 150px 0 150px;
+        background: #fff;
+        .el__listbtn{
+            margin-bottom: 150px;
+        }
+        .table-responsive{
+            margin-bottom: 100px;
+        }
+        table{
+            letter-spacing: 1px;
+            border-color: #CBC8C7;
+            tr{
+                &:first-child{
+                    font-size: 30px;
+                    letter-spacing: 2px;
+                    color: #C4A464;
+                    border-bottom: 2px solid #C4A464;
+                    td{
+                        background-color: #fff;
+                        &:first-child{
+                            width: 325px;
+                        }
+                        &:last-child{
+                            width: 160px;
+                        }
+                    }
+                }
+                &:last-child{
+                    border-bottom: 2px solid #C4A464;
+                }
+            }
+            td,th{
+                padding: 10px 15px;
+            }
+            td{
+                &.-first-child{
+                    background-color: #F8F6F3;
+                }
+                &:last-child{
+                    text-align: right;
+                }
+            }
+        }
+    }
+    @media (max-width:991px){
+        &-pricelist{
+            padding: 80px 0;
+            .el__listbtn {
+                margin-bottom: 50px;
+            }
+            .table-responsive {
+                margin-bottom: 50px;
+            }
+            table {
+                font-size: 16px;
+                tr:first-child {
+                    font-size: 26px;
+                    td{
+                        &:first-child{
+                            width: 290px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width:767px){
+        &-pricelist{
+            table {
+                tr:first-child {
+                    font-size: 22px;
+                    td{
+                        &:first-child{
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width:575px){
+        &-pricelist{
+            table{
+                tr{
+                    &:first-child{
+                        font-size: 20px;
+                        td{
+                            &:first-child {
+                                min-width: 200px;
+                            }
+                        }
+                    }
+                    td:nth-last-child(2) {
+                        min-width: 220px;
+                    }
+                }
+            }
+        }
+    }
+}

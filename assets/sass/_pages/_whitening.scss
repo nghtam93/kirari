@@ -1,0 +1,176 @@
+.whitening{
+    &-plan{
+        padding: 125px 0 150px;
+        letter-spacing: 1px;
+        background-color: #EFF3F9;
+        .el{
+            &__header--excerpt{
+                text-align: center;
+                margin-bottom: 80px;
+            }
+            &__item{
+                margin-bottom: 60px;
+                p+p{
+                    margin-top: 40px;
+                }
+                
+            }
+            &--title{
+                font-family: 'Noto Serif JP', serif;
+                font-size: 30px;
+                color: #524945;
+                margin-bottom: 30px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #6484C4;
+            }
+            &__box{
+                padding: 60px 75px;
+                background-color: #fff;
+                &--title{
+                    font-family: 'Noto Serif JP', serif;
+                    font-size: 35px;
+                    letter-spacing: 2px;
+                    color: #6484C4;
+                    margin-bottom: 50px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    &-starting{
+        padding: 140px 0;
+        letter-spacing: 1px;
+        .el{
+            &__header--excerpt{
+                margin-bottom: 80px;
+            }
+            &__box{
+                padding: 60px 45px;
+                background-color: #F8F6F3;
+                &--title{
+                    font-family: 'Noto Serif JP', serif;
+                    font-size: 27px;
+                    letter-spacing: 2px;
+                    color: #6484C4;
+                    margin-bottom: 50px;
+                    text-align: center;
+                }
+                &__list{
+                    font-size: 18px;
+                    margin-bottom: 40px;
+                    li{
+                        &:not(:last-child){
+                            margin-bottom: 15px;
+                        }
+                        &::before{
+                            content: "●";
+                            color: #6484C4;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                .el--title{
+                    font-size: 21px;
+                    color: #6484C4;
+                    margin-bottom: 15px;
+                }
+                &__list2{
+                    font-size: 16px;
+                    li{
+                        display: flex;
+                        &:not(:last-child){
+                            margin-bottom: 15px;
+                        }
+                        &::before{
+                            content: "■";
+                            color: #A8A4A2;
+                            margin-right: 5px;
+                        }
+                        &--title{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media ( max-width: 1199px ) {
+        &-plan{
+            .el--excerpt{
+                font-size: 16px;
+            }
+            .el__box--title {
+                font-size: 30px;
+            }
+            .el__box--excerpt {
+                font-size: 16px;
+            }
+        }
+    }
+    @media ( max-width: 991px ) {
+        &-our{
+            &.ireba-engaement{
+                .el__box ul.-list2 {
+                    padding: 0px 30px 0px;
+                }
+                .el__title {
+                    font-size: 26px;
+                }
+            }
+        }
+        &-plan {
+            padding: 80px 0;
+            .el__box {
+                padding: 50px 25px;
+            }
+            .el--title {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            .el__box--title {
+                font-size: 24px;
+            }
+        }
+        &-starting {
+            padding: 80px 0;
+            .el__header--excerpt {
+                margin-bottom: 60px;
+                font-size: 16px;
+            }
+        }
+    }
+    @media ( max-width: 767px ) {
+        &-our{
+            &.ireba-engaement{
+                .el__box ul.-list2 {
+                    padding: 0px 0px 0px;
+                }
+                .el__title {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        &-plan .el__box--title {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        &-starting{
+            .el__box {
+                padding: 40px 25px;
+            }
+            .el__box--title {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    @media ( max-width: 575px ) {
+        &-our.ireba-engaement .el__box ul.-list2 {
+            display: block;
+        }
+    }
+    @media ( max-width: 399px ) {
+        &-starting .el__box--title {
+            font-size: 21px;
+        }
+    }
+}

@@ -71,11 +71,29 @@ br{
 }
 
 @media (min-width:992px){
+    .col-lg-14{
+        width: 14%;
+    }
     .col-lg-20{
         width: 20%;
     }
-    .col-lg-80{
-        width: 80%;
+    .col-lg-30{
+        width: 30%;
+    }
+    .col-lg-48{
+        width: 48%;
+    }
+    .col-lg-52{
+        width: 52%;
+    }
+    .col-lg-70{
+        width: 70%;
+    }
+    .col-lg-86{
+        width: 86%;
+    }
+    .gx-lg-7{
+        --bs-gutter-x: 5rem;
     }
 }
 @media (min-width: 1200px){
@@ -90,6 +108,9 @@ br{
     }
     .container-1024 {
         max-width: 1048px;
+    }
+    .container-1400 {
+        max-width: 1424px;
     }
     .container-sm{
         max-width: 1048px;

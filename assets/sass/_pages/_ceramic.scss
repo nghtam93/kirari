@@ -1,0 +1,397 @@
+.ceramic{
+    &-intro{
+        position: relative;
+        padding: 0px 0 80px;
+        background-color: #EFF3F9;
+        
+        .el{
+            &__bg{
+                padding: 120px 0 30px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: right;
+                margin-bottom: 80px;
+            }
+            &__item{
+                position: relative;
+            }
+            &__title{
+                font-family: 'Noto Serif JP', serif;
+                font-size: 37px;
+                letter-spacing: 3px;
+                color: #6484C4;
+                margin-bottom: 30px;
+            }
+            &__list{
+                font-family: 'Noto Serif JP', serif;
+                font-size: 25px;
+                letter-spacing: 1px;
+                li{
+                    position: relative;
+                    &::before {
+                        content: "";
+                        background-image: url(../img/pages/checkbox2.png);
+                        background-repeat-x: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        width: 27px;
+                        height: 25px;
+                        display: inline-block;
+                        margin-right: 10px;
+                        position: relative;
+                        top: 3px;
+                    }
+                }
+            }
+        }
+    }
+    &-zirconia{
+        padding: 150px 0 40px;
+        overflow: hidden;
+        .ga__listbtn{
+            margin-bottom: 120px;
+        }
+        .el{
+            &__item{
+                margin-bottom: 90px;
+                letter-spacing: 1px;
+                &.-large{
+                    margin-bottom: 60px;
+                    .el__thumb{
+                        width: calc(100% + 17%);
+                    }
+                    .el__title{
+                        font-size: 37px;
+                        letter-spacing: 3px;
+                        padding: 0;
+                        margin-bottom: 40px;
+                    }
+                }
+                .el__title{
+                    font-family: 'Noto Serif JP', serif;
+                    font-size: 33px;
+                    letter-spacing: 2px;
+                    color: #695C55;
+                    margin-bottom: 30px;
+                }
+                .el__excerpt{
+                    letter-spacing: 1px;
+                }
+            }
+            &__box{
+                background-color: #FDF6E6;
+                padding: 50px;
+                margin-bottom: 100px;
+                &__title{
+                    font-size: 27px;
+                    letter-spacing: 1px;
+                    color: #524945;
+                    margin-bottom: 20px;
+                    &:before{
+                        content: "■";
+                        display: inline-block;
+                        color: #F4D181;
+                    }
+                }
+                ul{
+                    &.-list2{
+                        padding: 0px 30px 0px;
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        white-space: nowrap;
+                        font-size: 21px;
+                        letter-spacing: 1px;
+                        li{
+                            margin-bottom: 10px;
+                            &::before{
+                                content: "● ";
+                                color: #F4D181;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    &-inlay{
+        padding: 100px 0;
+        background-color: #F8F6F3;
+        .el{
+            &__box{
+                &--title{
+                    position: relative;
+                    font-family: 'Noto Serif JP', serif;
+                    font-size: 30px;
+                    letter-spacing: 1px;
+                    color: #695C55;
+                    border: 1px solid #C4A464;
+                    border-radius: 35px;
+                    margin-bottom: 30px;
+                    padding: 11px 25px;
+                    &::before{
+                        content: "●";
+                        display: inline;
+                        margin-right: 15px;
+                        color: #C4A464;
+                    }
+                }
+            }
+            &__item{
+                margin-bottom: 80px;
+            }
+            &--title{
+                font-family: 'Noto Serif JP', serif;
+                font-size: 27px;
+                letter-spacing: 2px;
+                color: #695C55;
+                border-bottom: 1px solid #BAB6B4;
+                padding-bottom: 15px;
+                margin-bottom: 30px;
+            }
+            &--meta {
+                display: flex;
+                flex-wrap: wrap;
+                height: 100%;
+            }
+            &--price{
+                font-family: 'Noto Serif JP', serif;
+                font-size: 29px;
+                font-weight: 500;
+                letter-spacing: 1px;
+                color: #9E8146;
+                margin-top: auto;
+                margin-left: auto;
+            }
+            &--right{
+                display: flex;
+            }
+            &__clgt{
+                background-color: #fff;
+                font-size: 20px;
+                padding: 25px 25px;
+                letter-spacing: 1px;
+                li{
+                    display: flex;
+                    justify-content: space-between;
+                    &:not(:last-child){
+                        margin-bottom: 7px;
+                    }
+                }
+            }
+            &--thumb{
+                padding-top: 100%;
+            }
+            &--leaf{
+                display: inline;
+                color: #D3D3D3;
+                .-primary{
+                    color: #F4D181;
+                }
+            }
+        }
+    }
+    &-bottom{
+        padding: 100px 0 20px;
+        .el{
+            &__item{
+                margin-bottom: 100px;
+                letter-spacing: 1px;
+            }
+            &--title{
+                font-family: 'Noto Serif JP', serif;
+                font-size: 35px;
+                font-weight: 500;
+                color: #695C55;
+                padding-top: 15px;
+                margin-bottom: 50px;
+                border-bottom: 1px solid #C4A464;
+            }
+            &--sub{
+                font-family: 'Noto Serif JP', serif;
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+            &--excerpt{
+               
+            }
+        }
+    }
+    @media (max-width:1399px){
+        &-zirconia{
+            .el__item.-large .el__thumb {
+                width: 100%;
+            }
+        }
+    }
+    @media (max-width:1199px){
+        &-intro{
+            .el__bg {
+                background-position: 60% center;
+            }
+            .el__title {
+                font-size: 30px;
+            }
+            .el__list {
+                font-size: 20px;
+                li{
+                    margin-bottom: 5px;
+                    &::before {
+                        width: 22px;
+                        height: 20px;
+                    }
+                }
+            }
+            
+        }
+        &-zirconia{
+            padding: 100px 0 40px;
+            .el__box ul.-list2 {
+                font-size: 18px;
+            }
+            .el__box__title {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            .ga__listbtn {
+                margin-bottom: 70px;
+            }
+            .el__item .el__title {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+        }
+        &-inlay{
+            padding: 100px 0 50px;
+            .el__item {
+                margin-bottom: 50px;
+            }
+            .el--meta {
+                font-size: 16px;
+            }
+            .el__box--title {
+                font-size: 24px;
+            }
+            .el__clgt {
+                font-size: 16px;
+                padding: 16px 20px;
+            }
+            .el--price {
+                font-size: 26px;
+            }
+        }
+        &-bottom{
+            padding: 80px 0 0px;
+            .el--title {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+            .el--sub {
+                font-size: 24px;
+            }
+            .el__excerpt {
+                font-size: 16px;
+            }
+        }
+    }
+    @media (max-width:991px){
+        &-intro{
+            .el__bg {
+                padding: 70px 0 30px;
+            }
+        }
+        &-zirconia{
+            padding: 80px 0 0;
+            .el__box {
+                padding: 25px;
+                ul.-list2 {
+                    font-size: 16px;
+                    padding: 0px 15px 0px;
+                    grid-template-columns: auto;
+                    white-space: inherit;
+                }
+            }
+            .el__item {
+                .el__excerpt {
+                    font-size: 16px;
+                }
+                .el__title {
+                    font-size: 24px;
+                }
+            }
+        }
+        &-inlay{
+            .el__clgt {
+                font-size: 14px;
+                padding: 12px 15px;
+                li:not(:last-child) {
+                    margin-bottom: 3px;
+                }
+            }
+            .el--price {
+                font-size: 22px;
+            }
+        }
+        &-bottom{
+            .el__item {
+                margin-bottom: 50px;
+            }
+            .el--sub {
+                font-size: 21px;
+            }
+        }
+    }
+    @media (max-width:767px){
+        &-inlay{
+            .el--meta{
+                padding-bottom: 15px;
+            }
+            .el__box--title {
+                font-size: 20px;
+            }
+        }
+    }
+    @media ( max-width: 575px ) {
+        &-inlay{
+            .el--right {
+                --bs-gutter-x: .5rem;
+            }
+            .el__item {
+                margin-bottom: 20px;
+            }
+            .el__clgt{
+                margin-bottom: 15px;
+                font-size: 12px;
+                padding: 7px 15px;
+            }
+            .el--title {
+                font-size: 20px;
+            }
+        }
+        &-bottom{
+            .el--title {
+                font-size: 24px;
+            }
+            .el--sub {
+                font-size: 20px;
+            }
+        }
+    }
+    @media ( max-width: 479px ) {
+        &-intro{
+            padding: 0px 0 50px;
+            .el__bg {
+                margin-bottom: 50px;
+            }
+        }
+        &-zirconia{
+            .el__box__title {
+                font-size: 22px;
+            }
+            .el__item {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

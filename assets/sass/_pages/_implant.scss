@@ -1,0 +1,179 @@
+.implant{
+    &-merit{
+        padding: 170px 0 115px;
+        .ga__listbtn{
+            padding: 0 0;
+            margin-bottom: 120px;
+            a{
+                max-width: 100%;
+            }
+        }
+        .el{
+            &__item {
+                width: 100%;
+                padding: 40px 40px;
+                margin-bottom: 50px;
+                background-color: #FDF6E6;
+                &.-st2{
+                    background-color: #F2F2F2;
+                }
+            }
+            &__header{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            &--title{
+                font-family: 'Noto Serif JP', serif;
+                display: inline-block;
+                font-size: 28px;
+                letter-spacing: 1px;
+                color: #695C55;
+                padding-bottom: 5px;
+                border-bottom: 1px solid #C4A464;
+            }
+            &__wrap--list {
+                display: flex;
+                justify-content: center;
+            }
+            &--list{
+                font-size: 21px;
+                letter-spacing: 1px;
+                &.-st2{
+                    li::before{color: #B9B9B9;}
+                }
+                li{
+                    &:not(:last-child){
+                        margin-bottom: 15px;
+                    }
+                    &::before{
+                        content: "●";
+                        color: #F4D181;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    &-simulation{
+        padding: 130px 0 70px;
+        letter-spacing: 1px;
+        background-color: #F8F6F3;
+        .el{
+            &__item{
+                margin-bottom: 60px;
+                &.-small{
+                    padding: 45px 50px;
+                    background-color: #EDE7E1;
+                }
+            }
+            &--title{
+                font-size: 23px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .invisalign-flow.-implant{
+        .-color{
+            font-size: 23px;
+            color: #6484C4;
+        }
+        .el--excerpt{
+            p+p{
+                margin-top: 40px;
+            }
+        }
+    }
+    &-qa{
+        padding: 110px 0 150px;
+        background-color: #FDF6E6;
+        letter-spacing: 1px;
+        .el{
+            &__item{
+                &+.el__item{
+                    margin-top: 70px;
+                }
+                .-text{
+                    font-family: 'EB Garamond';
+                    font-size: 38px;
+                    letter-spacing: 2px;
+                    color: #C4A464;
+                    line-height: 1;
+                    flex: 0 0 auto;
+                    width: 75px;
+                }
+            }
+            &--title{
+                font-family: 'Noto Serif JP', serif;
+                font-size: 25px;
+                color: #9E8146;
+                margin-bottom: 15px;
+            }
+            &--answer{
+                .-text{
+                    color: #6484C4;
+                }
+            }
+        }
+    }
+    @media ( max-width: 1199px ) {
+        &-merit{
+            padding: 100px 0 50px;
+            .ga__listbtn {
+                margin-bottom: 70px;
+            }
+            .el__item {
+                padding: 40px 35px;
+            }
+            .el--title {
+                font-size: 22px;
+            }
+            .el--list {
+                font-size: 16px;
+            }
+        }
+        &-simulation {
+            padding: 100px 0 40px;
+            .el__item {
+                margin-bottom: 50px;
+                font-size: 16px;
+            }
+        }
+        .invisalign-flow.-implant{
+            .el--excerpt{
+                p + p {
+                    margin-top: 25px;
+                }
+            }
+        }
+        &-qa{
+            padding: 100px 0 100px;
+            .el__item {
+                font-size: 16px;
+                .-text {
+                    font-size: 34px;
+                }
+            }
+        }
+    }
+    @media ( max-width: 991px ) {
+        &-merit{
+            .el__item {
+                padding: 40px 25px;
+            }
+            .el__header {
+                margin-bottom: 20px;
+            }
+            .el--title {
+                font-size: 18px;
+            }
+        }
+        &-simulation{
+            .el__item.-small {
+                padding: 30px 25px;
+            }
+        }
+    }
+    @media ( max-width: 767px ) {
+        
+    }
+}

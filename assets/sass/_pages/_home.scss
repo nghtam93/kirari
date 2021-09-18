@@ -62,6 +62,7 @@
       &::before{
         content: "";
         background-image: url(../img/home-slider-ictop.png);
+        background-repeat-x: no-repeat;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: top left;
@@ -76,6 +77,7 @@
       &::after{
         content: "";
         background-image: url(../img/home-slider-icbottom.png);
+        background-repeat-x: no-repeat;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center right;
@@ -269,6 +271,28 @@
         }
     }
   }
+  &.-st3{
+    position: relative;
+    bottom: 0;
+    padding: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    color: #524945;
+    width: 100%;
+    max-width: 100%;
+    .table-schedule{
+        thead th {
+            border-bottom: 1px solid #BAB6B4;
+        }
+        tbody tr {
+            border-bottom: 1px solid #BAB6B4;
+        }
+        tbody td {
+            font-size: 13px;
+            color: $color_primary;
+        }
+    }
+  }
   .table-schedule {
     width: 100%;
     border-collapse: collapse;
@@ -335,6 +359,9 @@
   }
   @media (max-width:767px){
     padding: 10px 10px;
+    &.-st3 {
+      font-size: 14px;
+    }
     &.-st1 {
       .schedule {
         display: none;
@@ -542,7 +569,7 @@
   &::before{
     content: "";
     background-image: url(../img/sc-message-top.png);
-    background-size: contain;
+    background-repeat-x: no-repeat;
     background-repeat: no-repeat;
     background-position: top right;
     background-size: contain;
@@ -763,6 +790,7 @@
     height: 100%;
     z-index: 1;
     background-image: url('../img/recommended-icleft.png');
+    background-repeat-x: no-repeat;
     background-position: top left;
     background-size: contain;
     pointer-events: none;
@@ -776,6 +804,7 @@
     height: 100%;
     z-index: 1;
     background-image: url('../img/recommended-icright.png');
+    background-repeat-x: no-repeat;
     background-position: top right;
     background-size: contain;
     pointer-events: none;
@@ -1377,6 +1406,7 @@
     height: 100%;
     z-index: 1;
     background-image: url('../img/greeting-left.png');
+    background-repeat-x: no-repeat;
     background-position: top left;
     background-size: contain;
     pointer-events: none;
@@ -1390,6 +1420,7 @@
     height: 100%;
     z-index: 1;
     background-image: url('../img/greeting-right.png');
+    background-repeat-x: no-repeat;
     background-position: top right;
     background-size: contain;
     pointer-events: none;

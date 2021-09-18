@@ -12,6 +12,7 @@
         background-repeat: no-repeat;
         background-position: top left;
         background-size: contain;
+        background-repeat-x: no-repeat;
         width: 35%;
         height: 73%;
         z-index: 1;
@@ -99,6 +100,34 @@
     @media ( max-width: 399px ) {
         .el__sub {
             font-size: 34px;
+        }
+    }
+}
+
+.ga__listbtn{
+    justify-content: center;
+    padding: 0 40px;
+    li{
+        margin-bottom: 30px;
+    }
+    a{
+        width: 100%;
+        max-width: 460px;
+        padding: 14px 35px 14px 10px;
+        transition: all 1s;
+        border-color: #C4A464;
+        background-color: #C4A464;
+        color: #fff;
+        &:hover{
+            background-color: #524945;
+            border-color: #524945;
+            color: #fff;
+        }
+        &::after{
+        content: "\e906";
+            margin-top: 1px;
+            font-size: 10px;
+            right: 20px;
         }
     }
 }
