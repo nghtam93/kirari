@@ -3,6 +3,12 @@
 [ Main menu ]
 ======================================
 */
+.header:not(.is-sticky){
+    .main__nav{
+        text-shadow: 0 0 5px #000000;
+    }
+}
+
 .main__nav{
     position:relative;
     z-index:9;
@@ -263,7 +269,7 @@
     .nav__mobile__close{
         display:none;
     }
-    .btn--primary {
+    .btn--primary.-custom {
         border-color: #6484C4;
         background-color: #6484C4;
     }

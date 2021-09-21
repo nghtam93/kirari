@@ -17,20 +17,38 @@
                 &.next{
                     right: 7%;
                     &:before {
-                        content: "\e901";
-                        font-family: 'icomoon' !important;
-                        font-size: 4px;
+                        // content: "\e901";
+                        // font-family: 'icomoon' !important;
+                        // font-size: 4px; 
+                        content: "";
+                        display: block;
+                        margin: auto;
                         line-height: 40px;
                         color: #fff;
+                        background-image: url(../img/arrow-right-white.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        width: 16px;
+                        height: 5px;
                     }
                 }
                 &.previous{
                     left: 7%;
                     &:before {
-                        content: "\e901";
+                        // content: "\e901";
+                        // display: block;
+                        // font-family: 'icomoon' !important;
+                        // font-size: 4px;
+                        content: "";
                         display: block;
-                        font-family: 'icomoon' !important;
-                        font-size: 4px;
+                        margin: auto;
+                        background-image: url(../img/arrow-right-white.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        width: 16px;
+                        height: 5px;
                         line-height: 40px;
                         -webkit-transform: scaleX(-1);
                         transform: scaleX(-1);

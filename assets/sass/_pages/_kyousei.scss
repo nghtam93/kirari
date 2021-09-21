@@ -129,10 +129,21 @@
                       color: #fff;
                     }
                     &::after{
-                    content: "\e906";
-                      margin-top: 1px;
-                      font-size: 10px;
-                      right: 20px;
+                        // content: "\e906";
+                        margin-top: 1px;
+                        // font-size: 10px;
+                        right: 20px;
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        // right: 30px;
+                        background-image: url(../img/arrow-right-white.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        width: 16px;
+                        height: 5px;
                     }
                 }
             }

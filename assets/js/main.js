@@ -2,11 +2,11 @@ jQuery(function($) {
     $(document).ready(function(){
 
         new WOW().init();
-        if($('body').hasClass( "home" )){
+        if($('body').hasClass( "dn-home" )){
             $('.el__marquee').marquee({
                 startVisible : true,
                 gap: 0,
-                duration: 30000,
+                duration: 20000,
                 duplicated: true
             });
         }
@@ -14,7 +14,7 @@ jQuery(function($) {
         var header_sticky = $('header.header')
         $(window).scroll(function(){
             stickyHeight = 0
-            if($('body').hasClass('home')){
+            if($('body').hasClass('dn-home')){
                 stickyHeight = header_sticky.outerHeight() + $('.home-slider').outerHeight();
             }
             $(this).scrollTop()>=stickyHeight?header_sticky.addClass("is-sticky"):header_sticky.removeClass("is-sticky")
